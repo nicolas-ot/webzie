@@ -1,13 +1,24 @@
 import './app.scss';
 
-import Main from './containers/Main/Main';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Auth from './pages/Auth/Auth';
+import Main from './pages/Main/Main';
 
 function App() {
   return (
-    <div className='App'>
-      {/* {react router: Landing, Main, SignIn/Up} */}
-      <Main />
-    </div>
+    <Router>
+      <div className='App'>
+        <Switch>
+          <Route exact path='/'>
+            <Main />
+          </Route>
+          <Route path='/sign-in'>
+            <Auth />
+          </Route>
+        </Switch>
+        {/* {react router: Landing, Main, SignIn/Up} */}
+      </div>
+    </Router>
   );
 }
 

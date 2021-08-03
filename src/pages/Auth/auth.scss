@@ -1,0 +1,224 @@
+// @font-face {
+//   font-family: Archivo;
+//   src: url(../../assets/fonts/Archivo-VariableFont_wdthwght.ttf);
+// }
+// error, blm tau kenapa
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Archivo;
+}
+
+body {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  padding: 20px 90px;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.logo p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.navbar {
+  width: 70%;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar ul a {
+  color: #5e5de4;
+  text-decoration: none;
+}
+
+.navbar ul li {
+  list-style: none;
+  padding: 5px 20px;
+}
+
+.navbar .btn {
+  padding: 5px 45px;
+  border-radius: 20px;
+  background-color: #5e5de4;
+  color: white;
+}
+
+section {
+  display: flex;
+  width: 100%;
+}
+
+section .left {
+  width: 23%;
+}
+
+section .content {
+  width: 54%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .right {
+  width: 23%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.content .box-signin {
+  border-radius: 10px;
+  box-shadow: 0px 0px 7px 0px;
+  display: flex;
+  width: 90%;
+}
+
+.box-signin .image {
+  width: 45%;
+}
+
+.box-signin .image img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  object-fit: cover;
+  object-position: 80%;
+}
+
+.input {
+  width: 55%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 40px 30px 40px 50px;
+  box-shadow: -10px 0px 60px 40px white;
+}
+
+.input .topic {
+  font-size: 36px;
+  font-weight: bold;
+  color: #5e5de4;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input {
+  margin-top: 5px;
+  padding: 10px 0px;
+  border: none;
+  border-bottom: 2px solid whitesmoke;
+  outline: none;
+}
+
+.form-group input::placeholder {
+  color: #bcbcbc;
+}
+
+.form-group input:focus {
+  border-bottom: 2px solid #5e5de4;
+}
+
+.box-1 {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.box-1 input {
+  width: 20px;
+  height: 20px;
+}
+
+.box-1 .remember {
+  display: flex;
+  align-items: center;
+}
+
+.box-1 .remember p {
+  margin-left: 5px;
+}
+
+.box-2 {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.box-2 button {
+  padding: 10px 50px;
+  border: none;
+  background-color: #5e5de4;
+  color: white;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.box-3 {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box-3 hr {
+  width: 48%;
+  background-color: #bcbcbc;
+  margin: 0;
+}
+
+.box-3 p {
+  font-size: 16px;
+  padding: 0px 10px;
+}
+
+.box-4 {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.box-4 button {
+  width: 100%;
+  border-radius: 50px;
+  border: none;
+  background-color: #5e5de4;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.box-5 {
+  margin-top: 15px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
