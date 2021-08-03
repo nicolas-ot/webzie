@@ -10,7 +10,11 @@ const Navbar = () => {
         ></img>
         <span>Webzie</span>
       </div>
-      <div>Categories</div>
+      <div className='categories-wrapper'>
+        <button>Categories</button>
+        <div className='categories-selection'></div>
+      </div>
+
       <div>Search</div>
       <div>Home</div>
       <div>Webzie for Host</div>

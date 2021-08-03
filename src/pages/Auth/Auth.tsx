@@ -67,7 +67,7 @@ const Auth = () => {
                 <input type='password' placeholder='*****' />
               </div>
               <div className='box-1'>
-                <div className='remember'>
+                <div className='remem ber'>
                   <input type='checkbox' />
                   <p>Remember me</p>
                 </div>

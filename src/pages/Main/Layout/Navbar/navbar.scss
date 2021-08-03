@@ -1,13 +1,27 @@
 .navbar-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   padding: 15px 2em;
 }
 
 .logo-wrapper {
+  display: flex;
   img {
-    height: 30px;
+    height: 35px;
     margin-right: 5px;
+  }
+
+  span {
+    align-self: center;
+  }
+}
+
+.categories-wrapper {
+  button {
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
   }
 }
