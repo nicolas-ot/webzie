@@ -84,18 +84,18 @@ section .right {
   align-items: flex-end;
 }
 
-.content .box-signin {
+.content .boxSignin {
   border-radius: 10px;
   box-shadow: 0px 0px 7px 0px;
   display: flex;
   width: 90%;
 }
 
-.box-signin .image {
+.boxSignin .image {
   width: 45%;
 }
 
-.box-signin .image img {
+.boxSignin .image img {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   object-fit: cover;
@@ -116,7 +116,7 @@ section .right {
   color: #5e5de4;
 }
 
-.form-group {
+.formGroup {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -124,11 +124,11 @@ section .right {
   font-size: 14px;
 }
 
-.form-group label {
+.formGroup label {
   font-weight: bold;
 }
 
-.form-group input {
+.formGroup input {
   margin-top: 5px;
   padding: 10px 0px;
   border: none;
@@ -136,15 +136,15 @@ section .right {
   outline: none;
 }
 
-.form-group input::placeholder {
+.formGroup input::placeholder {
   color: #bcbcbc;
 }
 
-.form-group input:focus {
+.formGroup input:focus {
   border-bottom: 2px solid #5e5de4;
 }
 
-.box-1 {
+.box1 {
   margin-top: 15px;
   display: flex;
   justify-content: space-between;
@@ -152,28 +152,28 @@ section .right {
   font-size: 14px;
 }
 
-.box-1 input {
+.box1 input {
   width: 20px;
   height: 20px;
 }
 
-.box-1 .remember {
+.box1 .remember {
   display: flex;
   align-items: center;
 }
 
-.box-1 .remember p {
+.box1 .remember p {
   margin-left: 5px;
 }
 
-.box-2 {
+.box2 {
   margin-top: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.box-2 button {
+.box2 button {
   padding: 10px 50px;
   border: none;
   background-color: #5e5de4;
@@ -182,30 +182,30 @@ section .right {
   font-weight: bold;
 }
 
-.box-3 {
+.box3 {
   margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.box-3 hr {
+.box3 hr {
   width: 48%;
   background-color: #bcbcbc;
   margin: 0;
 }
 
-.box-3 p {
+.box3 p {
   font-size: 16px;
   padding: 0px 10px;
 }
 
-.box-4 {
+.box4 {
   margin-top: 15px;
   width: 100%;
 }
 
-.box-4 button {
+.box4 button {
   width: 100%;
   border-radius: 50px;
   border: none;
@@ -215,7 +215,7 @@ section .right {
   font-weight: bold;
 }
 
-.box-5 {
+.box5 {
   margin-top: 15px;
   font-size: 16px;
   display: flex;
