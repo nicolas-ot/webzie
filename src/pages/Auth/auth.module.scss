@@ -15,52 +15,6 @@ body {
   width: 100%;
 }
 
-header {
-  width: 100%;
-  padding: 20px 90px;
-  display: flex;
-  position: fixed;
-  justify-content: space-between;
-}
-
-.logo {
-  width: 30%;
-  display: flex;
-  align-items: center;
-}
-
-.logo p {
-  font-size: 20px;
-  font-weight: bold;
-  margin-left: 5px;
-}
-
-.navbar {
-  width: 70%;
-}
-
-.navbar ul {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.navbar ul a {
-  color: #5e5de4;
-  text-decoration: none;
-}
-
-.navbar ul li {
-  list-style: none;
-  padding: 5px 20px;
-}
-
-.navbar .btn {
-  padding: 5px 45px;
-  border-radius: 20px;
-  background-color: #5e5de4;
-  color: white;
-}
-
 section {
   display: flex;
   width: 100%;
