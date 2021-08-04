@@ -1,10 +1,10 @@
-import './auth.scss';
+import styles from './auth.module.scss';
 
 const Auth = () => {
   return (
     <>
       <header>
-        <div className='logo'>
+        <div className={styles.logo}>
           <img
             src={require('../../assets/images/Logo Webzie/logo.jpg').default}
             alt='logo'
@@ -12,7 +12,7 @@ const Auth = () => {
           />
           <p>Webzie</p>
         </div>
-        <div className='navbar'>
+        <div className={styles.navbar}>
           <ul>
             <a href='/'>
               <li>Home</li>
@@ -24,7 +24,7 @@ const Auth = () => {
               <li>Log In</li>
             </a>
             <a href='-register'>
-              <li className='btn'>Register</li>
+              <li className={styles.btn}>Register</li>
             </a>
             <a href='en'>
               <li>EN</li>
@@ -33,7 +33,7 @@ const Auth = () => {
         </div>
       </header>
       <section>
-        <div className='left'>
+        <div className={styles.left}>
           <img
             src={
               require('../../assets/images/Website Backdrop/Backdrop Sign In _ Sign Up/Mask Group 418.png')
@@ -43,9 +43,9 @@ const Auth = () => {
             width='100%'
           />
         </div>
-        <div className='content'>
-          <div className='box-signin'>
-            <div className='image'>
+        <div className={styles.content}>
+          <div className={styles.boxSignin}>
+            <div className={styles.image}>
               <img
                 src={
                   require('../../assets/images/Full Page/Sign In - Sign Up/Sign In/Asset.jpg')
@@ -56,40 +56,40 @@ const Auth = () => {
                 height='100%'
               />
             </div>
-            <div className='input'>
-              <p className='topic'>Sign In</p>
-              <div className='form-group'>
+            <div className={styles.input}>
+              <p className={styles.topic}>Sign In</p>
+              <div className={styles.formGroup}>
                 <label>Email Address</label>
                 <input type='text' placeholder='Your email' />
               </div>
-              <div className='form-group'>
+              <div className={styles.formGroup}>
                 <label>Password</label>
                 <input type='password' placeholder='*****' />
               </div>
-              <div className='box-1'>
-                <div className='remem ber'>
+              <div className={styles.box1}>
+                <div className={styles.remember}>
                   <input type='checkbox' />
                   <p>Remember me</p>
                 </div>
-                <a href='forget' className='forget'>
+                <a href='forget' className={styles.forget}>
                   Forget your password?
                 </a>
               </div>
-              <div className='box-2'>
+              <div className={styles.box2}>
                 <button>Sign In</button>
               </div>
-              <div className='box-3'>
+              <div className={styles.box3}>
                 <hr />
                 <p>OR</p>
                 <hr />
               </div>
-              <div className='box-4'>
+              <div className={styles.box4}>
                 <button>Sign In</button>
               </div>
-              <div className='box-4'>
+              <div className={styles.box4}>
                 <button>Sign Up</button>
               </div>
-              <div className='box-5'>
+              <div className={styles.box5}>
                 <p>
                   Don't have account? <a href='sign-up'>Sign Up</a>
                 </p>
@@ -97,7 +97,7 @@ const Auth = () => {
             </div>
           </div>
         </div>
-        <div className='right'>
+        <div className={styles.right}>
           <img
             src={
               require('../../assets/images/Website Backdrop/Backdrop Sign In _ Sign Up/Mask Group 417.png')
