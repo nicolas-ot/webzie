@@ -1,27 +1,43 @@
-.navbar-wrapper {
+.home-navbar-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 15px 2em;
+  // font-size: 1.33em;
+  font-size: 1.8em;
+  padding: 15px 3.65em;
 }
 
-.logo-wrapper {
+.home-logo-wrapper {
   display: flex;
   img {
-    height: 35px;
+    height: 25px;
     margin-right: 5px;
   }
 
   span {
+    font-weight: 560;
     align-self: center;
   }
 }
 
-.categories-wrapper {
+.home-categories-wrapper {
+  position: relative;
   button {
     cursor: pointer;
     border: 0;
     background-color: transparent;
+  }
+
+  span {
+    padding: 0 1.2em;
+  }
+
+  .home-categories-selection {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 200px;
+    background-color: red;
   }
 }
