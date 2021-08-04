@@ -1,3 +1,8 @@
+:root {
+  font-size: 8px;
+  /* font size (pt) from design image is taken as px, but with base font-size of 10px. I.e. 18pt is converted to 1.8em */
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

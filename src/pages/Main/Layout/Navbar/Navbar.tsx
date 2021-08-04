@@ -2,17 +2,19 @@ import './navbar.scss';
 
 const Navbar = () => {
   return (
-    <div className='navbar-wrapper'>
-      <div className='logo-wrapper'>
+    <div className='home-navbar-wrapper'>
+      <div className='home-logo-wrapper'>
         <img
           alt='logo'
           src={require('../../../../assets/images/logo.jpg').default}
         ></img>
         <span>Webzie</span>
       </div>
-      <div className='categories-wrapper'>
-        <button>Categories</button>
-        <div className='categories-selection'></div>
+      <div className='home-categories-wrapper'>
+        <button>
+          <span>Categories</span>
+        </button>
+        <div className='home-categories-selection'>Selection</div>
       </div>
 
       <div>Search</div>
