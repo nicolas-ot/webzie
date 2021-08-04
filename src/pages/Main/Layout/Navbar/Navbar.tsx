@@ -17,7 +17,11 @@ const Navbar = () => {
         <div className='home-categories-selection'>Selection</div>
       </div>
 
-      <div>Search</div>
+      <div className='home-search-bar-wrapper'>
+        <form action=''>
+          <input type='text' placeholder='Search for anything' />
+        </form>
+      </div>
       <div>Home</div>
       <div>Webzie for Host</div>
       <div>Shopping Cart</div>
