@@ -1,12 +1,13 @@
 import './navbar.scss';
 
 import SearchBar from '../../../../elements/SearchBar/SearchBar';
-
-const searchHandler = (input: string) => {
-  console.log(input);
-};
+import { useCallback } from 'react';
 
 const Navbar = () => {
+  const searchHandler = useCallback((input: string) => {
+    console.log(input);
+  }, []);
+
   return (
     <div className='home-navbar-wrapper'>
       <div className='home-logo-wrapper'>
