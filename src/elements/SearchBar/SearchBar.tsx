@@ -3,22 +3,21 @@ import { useEffect } from 'react';
 import './searhBar.scss';
 
 interface SearchBarProps {
-  searchHandler: (input: string) => void;
   width?: string;
 }
 
-const SearchBar: React.FC<SearchBarProps> = ({ searchHandler }) => {
+const SearchBar: React.FC<SearchBarProps> = () => {
   const [input, setInput] = useState('');
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      searchHandler(input);
+      console.log(input);
     }, 750);
 
     return () => {
       clearTimeout(timer);
     };
-  }, [input, searchHandler]);
+  }, [input]);
 
   return (
     <div className='home-search-bar-wrapper'>
@@ -41,6 +40,9 @@ const SearchBar: React.FC<SearchBarProps> = ({ searchHandler }) => {
           onChange={(event) => setInput(event.target.value)}
         />
       </form>
+      <div className={'home-search-result ' + (input ? 'expand' : '')}>
+        {input}
+      </div>
     </div>
   );
 };
