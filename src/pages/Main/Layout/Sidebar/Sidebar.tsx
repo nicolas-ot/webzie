@@ -1,4 +1,5 @@
 import { ReactChild } from 'react';
+import './sidebar.scss';
 
 interface SidebarProps {
   children: ReactChild;
@@ -6,7 +7,7 @@ interface SidebarProps {
 
 const Sidebar: React.FC<SidebarProps> = ({ children }) => {
   return (
-    <div>
+    <div className='sidebar-wrapper'>
       <div>{children}</div>
     </div>
   );

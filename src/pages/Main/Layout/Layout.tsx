@@ -9,6 +9,7 @@ const Layout = () => {
       <Navbar />
       <main className='main-page'>
         <Sidebar>main</Sidebar>
+        <div className='main-content-wrapper'></div>
       </main>
     </div>
   );
