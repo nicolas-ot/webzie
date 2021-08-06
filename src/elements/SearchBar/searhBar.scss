@@ -1,16 +1,19 @@
 .home-search-bar-wrapper {
   position: relative;
   height: 3rem;
+  width: 100%;
   display: grid;
   place-items: center;
   border-radius: 9999px;
   background-color: #eee;
   margin: 0 1.2rem;
-
   .home-search-form {
     display: flex;
+    width: 100%;
     align-items: center;
     padding: 0 1em;
+    flex-shrink: 1;
+
     button {
       border: none;
 
@@ -22,6 +25,8 @@
       }
     }
     input {
+      color: black;
+
       background-color: transparent;
       border: none;
       margin-left: 10px;
@@ -31,18 +36,16 @@
       }
     }
   }
+}
 
-  .home-search-result {
-    position: absolute;
-    transform: scaleY(0);
-    top: 120%;
-    width: 100%;
-    left: 0;
-    height: 200px;
-    background-color: red;
-  }
-
-  .expand {
-    transform: scaleY(1);
-  }
+.home-search-result {
+  position: absolute;
+  top: 120%;
+  width: 100%;
+  left: 0;
+  height: 200px;
+  background-color: red;
+  transition: 150ms cubic-bezier(0, 0, 0.38, 0.9);
+  transform-origin: top;
+  color: black;
 }

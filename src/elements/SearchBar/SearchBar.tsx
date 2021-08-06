@@ -40,7 +40,11 @@ const SearchBar: React.FC<SearchBarProps> = () => {
           onChange={(event) => setInput(event.target.value)}
         />
       </form>
-      <div className={'home-search-result ' + (input ? 'expand' : '')}>
+      <div
+        className={
+          'home-search-result ' + (input.length >= 2 ? 'expand' : 'shrink')
+        }
+      >
         {input}
       </div>
     </div>

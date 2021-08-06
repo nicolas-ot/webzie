@@ -1,6 +1,7 @@
 import './navbar.scss';
 
 import SearchBar from '../../../../elements/SearchBar/SearchBar';
+import Button from '../../../../elements/Button/Button';
 
 const Navbar = () => {
   return (
@@ -20,12 +21,12 @@ const Navbar = () => {
       </div>
       <SearchBar />
 
-      <div>Home</div>
-      <div>Webzie for Host</div>
-      <div>Shopping Cart</div>
+      <div className='link-to-home'>Home</div>
+      <Button>Webzie for host</Button>
+
       <div>Bell</div>
       <div>User</div>
-      <div>Language</div>
+      <div>EN</div>
     </div>
   );
 };
