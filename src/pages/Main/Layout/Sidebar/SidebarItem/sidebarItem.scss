@@ -1,0 +1,39 @@
+@use '../../../../../utilities/variables.module';
+
+.sidebar-item {
+  margin-bottom: 1.8em;
+  border-radius: 100px;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.sidebar-link-wrapper {
+  display: flex;
+  color: variables.$light-purple;
+  align-items: center;
+  font-size: 1.8em;
+
+  svg {
+    margin-left: 0.4em;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  span {
+    margin-left: 0.5em;
+    padding-right: 2.5em;
+    flex-shrink: 0;
+  }
+}
+
+.active {
+  background-color: variables.$dark-purple;
+  span {
+    color: white;
+  }
+  svg {
+    color: white;
+  }
+}

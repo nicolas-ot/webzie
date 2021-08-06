@@ -1,5 +1,8 @@
 .sidebar-wrapper {
-  width: 100%;
+  margin: 0 4em;
   height: 100vh;
-  background-color: lightblue;
+
+  ul {
+    list-style-type: none;
+  }
 }
