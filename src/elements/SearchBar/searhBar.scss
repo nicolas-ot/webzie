@@ -1,3 +1,5 @@
+@use '../../utilities//variables.module';
+
 .home-search-bar-wrapper {
   position: relative;
   height: 3rem;
@@ -16,6 +18,7 @@
 
     button {
       border: none;
+      flex-shrink: 0;
 
       svg {
         height: 1.2em;
@@ -44,7 +47,7 @@
   width: 100%;
   left: 0;
   height: 200px;
-  background-color: red;
+  background-color: variables.$light-purple;
   transition: 150ms cubic-bezier(0, 0, 0.38, 0.9);
   transform-origin: top;
   color: black;

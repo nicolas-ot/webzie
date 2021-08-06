@@ -1,5 +1,15 @@
 @use '../../../../utilities/variables.module';
 
+$left-margin: 1.2em;
+
+// @keyframes name-of-animation{
+
+//   0%
+//   transform: rotate(0deg)
+//   100%
+//   transform: rotate(360deg)
+// }
+
 .shrink {
   transform: scaleY(0);
 }
@@ -52,10 +62,16 @@
   .home-categories-selection {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: 200%;
+    left: 10px;
     height: 200px;
-    background-color: red;
+    background-color: variables.$light-purple;
+  }
+
+  &:hover {
+    .home-categories-selection {
+      display: block;
+    }
   }
 }
 
@@ -70,6 +86,21 @@
     color: white;
     border-radius: 90px;
     background-color: variables.$dark-purple;
-    padding: 2px 0.8em;
+    padding: 2px $left-margin;
   }
+}
+
+.user-profile-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+
+  a {
+    text-decoration: none;
+    color: variables.$light-purple;
+  }
+}
+
+.home-language-selection {
+  margin-left: $left-margin;
 }
