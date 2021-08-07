@@ -7,6 +7,7 @@ interface SidebarItemProps {
   svg: React.SVGProps<SVGSVGElement>;
   children: ReactChild;
   active: boolean;
+  onClick: () => void;
 }
 
 const SidebarItem: React.FC<SidebarItemProps> = ({
@@ -14,11 +15,15 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
   link,
   children,
   active,
+  onClick,
 }) => {
   return (
-    <li className={'sidebar-item ' + (active ? 'active' : '')}>
+    <li
+      className={'sidebar-item ' + (active ? 'active' : '')}
+      onClick={() => onClick()}
+    >
       <div>
-        <Link to={link}>
+        <Link to={'/'}>
           <div className='sidebar-link-wrapper'>
             {svg}
             <span>{children}</span>

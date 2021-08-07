@@ -3,6 +3,7 @@
 .sidebar-item {
   margin-bottom: 1.8em;
   border-radius: 100px;
+  padding: 0.5em 0;
 
   a {
     text-decoration: none;
@@ -16,7 +17,7 @@
   font-size: 1.8em;
 
   svg {
-    margin-left: 0.4em;
+    margin-left: 1em;
     height: 24px;
     flex-shrink: 0;
   }
@@ -31,9 +32,6 @@
 .active {
   background-color: variables.$dark-purple;
   span {
-    color: white;
-  }
-  svg {
     color: white;
   }
 }
