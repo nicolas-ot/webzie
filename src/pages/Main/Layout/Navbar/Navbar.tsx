@@ -4,8 +4,13 @@ import SearchBar from '../../../../elements/SearchBar/SearchBar';
 import Button from '../../../../elements/Button/Button';
 import Icon from '../../../../elements/Icon/Icon';
 import variables from '../../../../utilities/_variables.module.scss';
+import { useActions } from '../../../../hooks/use-actions';
+import { useTypedSelector } from '../../../../hooks/use-typed-selector';
 
 const Navbar = () => {
+  const { changeToHost, changeToUser } = useActions();
+  const mode = useTypedSelector((state) => state.modes.mode);
+  console.log(mode);
   return (
     <div className='home-navbar-wrapper'>
       <div className='home-logo-wrapper'>
@@ -24,7 +29,11 @@ const Navbar = () => {
       <SearchBar />
 
       <div className='link-to-home'>Home</div>
-      <Button>Webzie for host</Button>
+      {mode === 'user' ? (
+        <Button onClick={changeToHost}>Webzie for Host</Button>
+      ) : (
+        <Button onClick={changeToUser}>Webzie for User</Button>
+      )}
       <Icon>
         <svg
           xmlns='http://www.w3.org/2000/svg'
