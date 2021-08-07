@@ -10,7 +10,7 @@ import { useTypedSelector } from '../../../../hooks/use-typed-selector';
 const Navbar = () => {
   const { changeToHost, changeToUser } = useActions();
   const mode = useTypedSelector((state) => state.modes.mode);
-  console.log(mode);
+
   return (
     <div className='home-navbar-wrapper'>
       <div className='home-logo-wrapper'>

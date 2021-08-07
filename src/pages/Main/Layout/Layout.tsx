@@ -1,28 +1,18 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useTypedSelector } from '../../../hooks/use-typed-selector';
 import './layout.scss';
 
 import Navbar from './Navbar/Navbar';
 import Sidebar from './Sidebar/Sidebar';
+import Content from './Content/Content';
 
 const Layout = () => {
   const [activePage, setActivePage] = useState('Home');
+  const mode = useTypedSelector((state) => state.modes.mode);
 
-  const renderMainPage = () => {
-    switch (activePage) {
-      case 'Home':
-        return <div>main</div>;
-      case 'My Calendar':
-        return <div>main2</div>;
-      case 'Badges':
-        return <div>mai3n</div>;
-      case 'My Webinars':
-        return <div>ma4in</div>;
-      case 'E-Certificate':
-        return <div>ma5in</div>;
-      case 'History':
-        return <div>ma6in</div>;
-    }
-  };
+  useEffect(() => {
+    setActivePage('Home');
+  }, [mode]);
 
   return (
     <div className='layout'>
@@ -32,7 +22,7 @@ const Layout = () => {
           activePage={activePage}
           setActivePage={setActivePage}
         ></Sidebar>
-        {renderMainPage()}
+        <Content activePage={activePage}></Content>
       </main>
     </div>
   );
