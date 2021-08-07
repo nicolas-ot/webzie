@@ -1,3 +1,4 @@
+import './content.scss';
 import { useTypedSelector } from '../../../../hooks/use-typed-selector';
 
 // user
