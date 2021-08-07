@@ -1,6 +1,9 @@
 import { ReactNode } from 'react';
 import Slick from 'react-slick';
 
+import '~slick-carousel/slick/slick.css';
+import '~slick-carousel/slick/slick-theme.css';
+
 interface SliderProps {
   children: ReactNode | ReactNode[];
 }
