@@ -1,0 +1,135 @@
+.topic{
+    font-size: 3.6em;
+    font-weight: bold;
+    color:#5e5de4;
+    padding-top: 10px;
+}
+
+.subTopic{
+    font-size: 1.8em;
+    font-weight: bold;
+    padding:15px 0px;
+}
+
+  
+.boxButton{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.boxButton button{
+    padding:10px 50px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.btnNext{
+    border: none;
+    background-color: #5e5de4;
+    color:white;
+}
+
+.btnBack{
+    border:2px solid #5e5de4;
+    background-color:white;
+    color: #5e5de4;
+    margin-right: 10px;
+}
+
+.boxCategory{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding:0 10px;
+    position: relative;
+}
+
+.rowCategory{
+    width: 100%;
+    padding:5px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Category{
+    width: 31%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px #bcbcbc;
+}
+
+.Category img{
+    height: 95px;
+    object-fit: cover;
+    object-position: 0% 20%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.categoryName{
+    width: 100%;
+    padding:10px;
+    height: 30px;
+    padding-left: 15px;
+    box-shadow: 0px -15px 10px 0px white;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.Category p{
+    width: 100%;
+    font-size: 1.4em;
+    color:#5e5de4;
+    font-weight: bold;
+}
+
+.info{
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.leftBtn{
+    position: absolute;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 0px 10px 0px #bcbcbc;
+    background-color:white;
+    top: 115px;
+    left: -15px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(90deg);
+}
+
+.leftBtn p{
+    font-size: 1.8em;
+}
+
+.rightBtn{
+    position: absolute;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 0px 5px 0px #bcbcbc;
+    background-color:white;
+    top: 115px;
+    right: -15px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform:rotate(-90deg);
+}
+
+.rightBtn p{
+    font-size: 1.8em;
+}

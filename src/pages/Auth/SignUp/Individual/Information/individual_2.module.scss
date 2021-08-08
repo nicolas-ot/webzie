@@ -1,0 +1,104 @@
+.menuSignUp{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.menuSignUp .individual{
+  padding:10px 20px;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  border-bottom: 3px solid #5e5de4;
+  color:#5e5de4;
+  cursor: pointer;
+}
+
+.menuSignUp .organization{
+  padding:10px 10px;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  border-bottom: 3px solid #bcbcbc;
+  cursor: pointer;
+}
+
+.formGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  font-size: 1.4em;
+}
+
+.formGroup label {
+  font-weight: bold;
+}
+
+.formGroup input {
+  margin-top: 5px;
+  padding: 5px 0px;
+  border: none;
+  border-bottom: 2px solid whitesmoke;
+  outline: none;
+}
+
+.formGroup input::placeholder {
+  color: #bcbcbc;
+}
+
+.formGroup input:focus {
+  border-bottom: 2px solid #5e5de4;
+}
+
+.box2 {
+  font-size: 14px;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 8px;
+  padding-top: 30px;
+}
+
+.box2 button {
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.btnNext{
+  padding:10px 60px;
+  border: none;
+  background-color: #5e5de4;
+  color:white;
+  cursor: pointer;
+}
+
+.btnNext:hover{
+    background-color: white;
+    color:#5e5de4;
+    border:2px solid #5e5de4;
+}
+
+.btnCancel{
+  padding:10px 50px;
+  border:2px solid #5e5de4;
+  background-color: white;
+  color:#5e5de4;
+  cursor: pointer;
+}
+
+.btnCancel:hover{
+    background-color: #5e5de4;
+    color:white;
+}
+
+.topic {
+  font-size: 3.6em;
+  font-weight: bold;
+  color: #5e5de4;
+}

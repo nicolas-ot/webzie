@@ -1,0 +1,44 @@
+// @font-face {
+//   font-family: Archivo;
+//   src: url(../../assets/fonts/Archivo-VariableFont_wdthwght.ttf);
+// }
+// error, blm tau kenapa
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Archivo;
+  }
+  
+  body {
+    width: 100%;
+  }
+  
+  section {
+    display: flex;
+    width: 100%;
+  }
+  
+  section .left {
+    width: 23%;
+  }
+  
+  section .content {
+    width: 54%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  section .right {
+    width: 23%;
+    display: flex;
+    align-items: flex-end;
+  }
+  section {
+    display: flex;
+    width: 100%;
+  }
+  

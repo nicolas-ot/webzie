@@ -3,7 +3,7 @@ import './app.scss';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Auth from './pages/Auth/Auth';
 import Main from './pages/Main/Main';
-import SignUp from './pages/Auth/signUp';
+import SignUp from './pages/Auth/Layout';
 import { Provider } from 'react-redux';
 import { store } from './state';
 
