@@ -1,0 +1,54 @@
+@use '../../utilities//variables.module';
+
+.home-search-bar-wrapper {
+  position: relative;
+  height: 3rem;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  border-radius: 9999px;
+  background-color: #eee;
+  margin: 0 1.2rem;
+  .home-search-form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0 1em;
+    flex-shrink: 1;
+
+    button {
+      border: none;
+      flex-shrink: 0;
+
+      svg {
+        height: 1.2em;
+        margin: auto;
+        width: 100%;
+        vertical-align: middle;
+      }
+    }
+    input {
+      color: black;
+
+      background-color: transparent;
+      border: none;
+      margin-left: 10px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.home-search-result {
+  position: absolute;
+  top: 120%;
+  width: 100%;
+  left: 0;
+  height: 200px;
+  background-color: variables.$light-purple;
+  transition: 150ms cubic-bezier(0, 0, 0.38, 0.9);
+  transform-origin: top;
+  color: black;
+}

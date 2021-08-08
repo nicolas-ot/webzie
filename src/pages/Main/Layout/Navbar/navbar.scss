@@ -1,3 +1,23 @@
+@use '../../../../utilities/variables.module';
+
+$left-margin: 1.2em;
+
+// @keyframes name-of-animation{
+
+//   0%
+//   transform: rotate(0deg)
+//   100%
+//   transform: rotate(360deg)
+// }
+
+.shrink {
+  transform: scaleY(0);
+}
+
+.expand {
+  transform: scaleY(1);
+}
+
 .home-navbar-wrapper {
   display: flex;
   justify-content: space-between;
@@ -5,6 +25,11 @@
   // font-size: 1.33em;
   font-size: 1.8rem;
   padding: 15px 3.65em;
+  margin-bottom: 2.3em;
+
+  > * {
+    color: variables.$light-purple;
+  }
 }
 
 .home-logo-wrapper {
@@ -15,8 +40,10 @@
   }
 
   span {
+    font-size: 2.4rem;
     font-weight: 560;
     align-self: center;
+    color: black;
   }
 }
 
@@ -30,14 +57,51 @@
 
   span {
     padding: 0 1.2em;
+    color: variables.$light-purple;
   }
 
   .home-categories-selection {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: 200%;
+    left: 10px;
     height: 200px;
-    background-color: red;
+    background-color: variables.$light-purple;
   }
+
+  &:hover {
+    .home-categories-selection {
+      display: block;
+    }
+  }
+}
+
+.link-to-home {
+  margin: 0 2em 0 2em;
+}
+
+.home-navbar-wrapper .change-host-button {
+  flex-shrink: 0;
+  button {
+    border: none;
+    color: white;
+    border-radius: 90px;
+    background-color: variables.$dark-purple;
+    padding: 2px $left-margin;
+  }
+}
+
+.user-profile-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+
+  a {
+    text-decoration: none;
+    color: variables.$light-purple;
+  }
+}
+
+.home-language-selection {
+  margin-left: $left-margin;
 }
