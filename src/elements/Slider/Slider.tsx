@@ -69,4 +69,4 @@ const Slider: React.FC<SliderProps> = ({ children }) => {
   return <Slick {...settings}>{children}</Slick>;
 };
 
-export default withSubTitle(Slider, 'Upcoming Webinar for You');
+export default Slider;

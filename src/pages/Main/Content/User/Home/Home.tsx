@@ -1,7 +1,8 @@
 import './home.scss';
 import Slider from '../../../../../elements/Slider/Slider';
-import Webinar from './Webinar/Webinar';
+import Webinar from '../../../../../components/UpcomingWebinar/Webinar/Webinar';
 import webinarData from '../../../../../data/static/webinar_mock.js';
+import UpcomingWebinar from '../../../../../components/UpcomingWebinar/UpcomingWebinar';
 
 const Home = () => {
   const WebinarList = webinarData.map((webinar) => (
@@ -13,11 +14,7 @@ const Home = () => {
       image={webinar.poster}
     />
   ));
-  return (
-    <div className='slider-wrapper'>
-      <Slider>{WebinarList}</Slider>
-    </div>
-  );
+  return <UpcomingWebinar></UpcomingWebinar>;
 };
 
 export default Home;

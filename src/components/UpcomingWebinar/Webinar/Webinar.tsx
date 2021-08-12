@@ -1,8 +1,8 @@
 import './webinar.scss';
 
 import dateformat from 'dateformat';
-import { dateDiffInDays } from '../../../../../../utilities/utility';
-import Button from '../../../../../../elements/Button/Button';
+import { dateDiffInDays } from '../../../utilities/utility';
+import Button from '../../../elements/Button/Button';
 
 interface WebinarProps {
   title: string;
