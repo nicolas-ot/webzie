@@ -1,11 +1,11 @@
 import React, { ReactElement } from 'react';
 import { useEffect, useState } from 'react';
-import { useTypedSelector } from '../../hooks/use-typed-selector';
+import { useTypedSelector } from '../../../hooks/use-typed-selector';
 import './layout.scss';
 
-import { ContentProps } from '../../pages/Main/Content/Content';
-import Navbar from '../../pages/Main/Navbar/Navbar';
-import Sidebar from '../../pages/Main/Sidebar/Sidebar';
+import { ContentProps } from '../Content/Content';
+import Navbar from './Navbar/Navbar';
+import Sidebar from './Sidebar/Sidebar';
 
 interface LayoutProps {
   children: ReactElement<ContentProps>;

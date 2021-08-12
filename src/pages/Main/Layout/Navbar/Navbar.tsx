@@ -1,11 +1,11 @@
 import './navbar.scss';
 
-import Button from '../../../elements/Button/Button';
-import Icon from '../../../elements/Icon/Icon';
-import SearchBar from '../../../elements/SearchBar/SearchBar';
-import variables from '../../../utilities/_variables.module.scss';
-import { useActions } from '../../../hooks/use-actions';
-import { useTypedSelector } from '../../../hooks/use-typed-selector';
+import Button from '../../../../elements/Button/Button';
+import Icon from '../../../../elements/Icon/Icon';
+import SearchBar from '../../../../elements/SearchBar/SearchBar';
+import variables from '../../../../utilities/_variables.module.scss';
+import { useActions } from '../../../../hooks/use-actions';
+import { useTypedSelector } from '../../../../hooks/use-typed-selector';
 
 const Navbar = () => {
   const { changeToHost, changeToUser } = useActions();
@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className='home-logo-wrapper'>
         <img
           alt='logo'
-          src={require('../../../assets/images/logo.jpg').default}
+          src={require('../../../../assets/images/logo.jpg').default}
         ></img>
         <span>Webzie</span>
       </div>
