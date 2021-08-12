@@ -1,13 +1,13 @@
 .webinar-wrapper {
   box-shadow: 0 0 10px #dddde3;
 
-  margin: 10px 10px;
-  height: 20em;
+  margin: 20px 10px 10px 10px;
   display: flex;
 }
 
 .webinar-image-wrapper {
   max-width: 45%;
+  max-height: 200px;
   img {
     height: 100%;
     max-width: 100%;
@@ -34,5 +34,31 @@
 
   .webinar-time-left {
     color: #aaaaaa;
+  }
+}
+
+.webinar-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0 6px 0;
+  font-size: 1.2rem;
+
+  button {
+    span {
+      white-space: nowrap;
+    }
+  }
+
+  .webinar-button-remind-me {
+    margin-right: 15px;
+    width: 50%;
+    span {
+      padding: 4px 0;
+      display: inline-block;
+    }
+  }
+
+  .webinar-button-attend {
+    width: 40%;
   }
 }

@@ -6,6 +6,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Settings } from 'react-slick';
 
+import withSubTitle from '../../hoc/withSubTitle/withSubTitle';
+
 interface SliderProps {
   children: ReactNode | ReactNode[];
 }
@@ -48,23 +50,14 @@ const Slider: React.FC<SliderProps> = ({ children }) => {
     prevArrow: <PrevArrow />,
     responsive: [
       {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 600,
+        breakpoint: 1245,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 900,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -76,4 +69,4 @@ const Slider: React.FC<SliderProps> = ({ children }) => {
   return <Slick {...settings}>{children}</Slick>;
 };
 
-export default Slider;
+export default withSubTitle(Slider, 'Upcoming Webinar for You');

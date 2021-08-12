@@ -12,6 +12,7 @@
   }
 
   .slick-prev {
+    z-index: 500;
     &:before {
       content: url(../../assets/images/icon_svg/arrow_drop_down.svg);
       transform: rotate(90deg);
@@ -21,6 +22,8 @@
   }
 
   .slick-next {
+    z-index: 500;
+
     &:before {
       content: url(../../assets/images/icon_svg/arrow_drop_down.svg);
       position: absolute;

@@ -2,6 +2,7 @@ import './webinar.scss';
 
 import dateformat from 'dateformat';
 import { dateDiffInDays } from '../../../../../../utilities/utility';
+import Button from '../../../../../../elements/Button/Button';
 
 interface WebinarProps {
   title: string;
@@ -44,7 +45,18 @@ const Webinar: React.FC<WebinarProps> = ({
         <div className='webinar-time-left webinar-detail'>
           {'in ' + dateDiffInDays(today, airDate) + ' day'}
         </div>
-        <div className='webinar-button-wrapper'></div>
+        <div className='webinar-button-wrapper'>
+          <Button className='webinar-button-remind-me' onClick={() => null}>
+            <span className='webinar-span-remind-me'>Remind Me</span>
+          </Button>
+          <Button
+            className='webinar-button-attend'
+            backgroundColor='lightgreen'
+            onClick={() => null}
+          >
+            <span className='webinar-span-attend'>Attend</span>
+          </Button>
+        </div>
       </div>
     </div>
   );
