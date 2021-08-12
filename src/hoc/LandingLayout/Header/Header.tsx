@@ -1,10 +1,9 @@
 import styles from './header.module.scss';
 
 const Header = () => {
-    return (
+  return (
     <>
-
-    <header>
+      <header>
         <div className={styles.logo}>
           <img
             src={require('../../../assets/images/Logo Webzie/logo.jpg').default}
@@ -33,9 +32,8 @@ const Header = () => {
           </ul>
         </div>
       </header>
-
     </>
-    );
+  );
 };
 
 export default Header;

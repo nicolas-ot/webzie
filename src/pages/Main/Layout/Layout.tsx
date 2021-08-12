@@ -6,6 +6,7 @@ import './layout.scss';
 import { ContentProps } from '../Content/Content';
 import Navbar from './Navbar/Navbar';
 import Sidebar from './Sidebar/Sidebar';
+import Footer from './Footer/Footer';
 
 interface LayoutProps {
   children: ReactElement<ContentProps>;
@@ -32,6 +33,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {/* <Content activePage={activePage} /> */}
         {React.cloneElement(children, { activePage: activePage })}
       </main>
+      <Footer />
     </div>
   );
 };
