@@ -1,5 +1,5 @@
 import './content.scss';
-import { useTypedSelector } from '../../../../hooks/use-typed-selector';
+import { useTypedSelector } from '../../../hooks/use-typed-selector';
 
 // user
 import Badges from './User/Badges/Badges';
@@ -16,14 +16,12 @@ import Wallet from './Host/Wallet/Wallet';
 import ECertificate from './User/ECertificate/ECertificate';
 import HostHistory from './Host/History/History';
 
-interface ContentProps {
+export interface ContentProps {
   activePage: string;
 }
 
 const Content: React.FC<ContentProps> = ({ activePage }) => {
   const mode = useTypedSelector((state) => state.modes.mode);
-
-  console.log(activePage);
 
   const renderUserMainPage = () => {
     switch (activePage) {

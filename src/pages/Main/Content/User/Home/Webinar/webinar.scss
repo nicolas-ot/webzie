@@ -1,0 +1,38 @@
+.webinar-wrapper {
+  box-shadow: 0 0 10px #dddde3;
+
+  margin: 10px 10px;
+  height: 20em;
+  display: flex;
+}
+
+.webinar-image-wrapper {
+  max-width: 45%;
+  img {
+    height: 100%;
+    max-width: 100%;
+  }
+}
+
+.webinar-content-wrapper {
+  max-width: 55%;
+  padding: 1em;
+  .webinar-title {
+    font-size: 1.6rem;
+    font-weight: 650;
+    margin-bottom: 0.9em;
+  }
+
+  .webinar-detail {
+    font-size: 1.4em;
+    margin-bottom: 0.6em;
+  }
+
+  .webinar-host {
+    font-weight: 580;
+  }
+
+  .webinar-time-left {
+    color: #aaaaaa;
+  }
+}

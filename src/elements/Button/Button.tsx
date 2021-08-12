@@ -1,11 +1,11 @@
-import { ReactChild } from 'react';
+import { ReactNode } from 'react';
 import styles from './button.module.scss';
 import variables from '../../utilities/_variables.module.scss';
 
 interface ButtonProps {
   color?: string;
-  children: ReactChild;
-  onClick?: () => void;
+  children: ReactNode;
+  onClick: () => void;
 }
 
 const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
@@ -14,7 +14,7 @@ const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
     color: 'white',
   };
   return (
-    <button style={CSS} className={styles.Button} onClick={onClick}>
+    <button style={CSS} className={styles.Button} onClick={() => onClick()}>
       <span>{children}</span>
     </button>
   );

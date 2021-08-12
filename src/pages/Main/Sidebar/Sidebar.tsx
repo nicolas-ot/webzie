@@ -1,8 +1,7 @@
 import './sidebar.scss';
 import SidebarItem from './SidebarItem/SidebarItem';
-import variables from '../../../../utilities/_variables.module.scss';
-import { useTypedSelector } from '../../../../hooks/use-typed-selector';
-import { useEffect } from 'react';
+import variables from '../../../utilities/_variables.module.scss';
+import { useTypedSelector } from '../../../hooks/use-typed-selector';
 
 interface SidebarProps {
   activePage: string;

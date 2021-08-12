@@ -1,11 +1,11 @@
-import { ReactChild } from 'react';
+import { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import './sidebarItem.scss';
 
 interface SidebarItemProps {
   link: string;
   svg: React.SVGProps<SVGSVGElement>;
-  children: ReactChild;
+  children: ReactNode;
   active: boolean;
   onClick: () => void;
 }

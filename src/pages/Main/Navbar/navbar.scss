@@ -1,4 +1,4 @@
-@use '../../../../utilities/variables.module';
+@use '../../../utilities/variables.module';
 
 $left-margin: 1.2em;
 
@@ -80,6 +80,10 @@ $left-margin: 1.2em;
   margin: 0 2em 0 2em;
 }
 
+.change-mode-button {
+  flex-shrink: 0;
+}
+
 .home-navbar-wrapper .change-host-button {
   flex-shrink: 0;
   button {
@@ -105,3 +109,15 @@ $left-margin: 1.2em;
 .home-language-selection {
   margin-left: $left-margin;
 }
+
+@media (max-width: 1000px) {
+  .change-mode-button {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .link-to-home {
+    display: none;
+  }
+} ;

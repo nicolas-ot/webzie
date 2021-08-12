@@ -1,0 +1,31 @@
+@use '../../utilities/variables.module';
+
+.slick-slider {
+  margin: 0 30px;
+
+  .slick-arrow {
+    // border: 1px solid black;
+    // color: variables.$dark-purple;
+    // border-radius: 100px;
+    border-radius: 100px;
+    box-shadow: 0 0 10px #dddde3;
+  }
+
+  .slick-prev {
+    &:before {
+      content: url(../../assets/images/icon_svg/arrow_drop_down.svg);
+      transform: rotate(90deg);
+      position: absolute;
+      inset: 0;
+    }
+  }
+
+  .slick-next {
+    &:before {
+      content: url(../../assets/images/icon_svg/arrow_drop_down.svg);
+      position: absolute;
+      inset: 0;
+      transform: rotate(270deg);
+    }
+  }
+}

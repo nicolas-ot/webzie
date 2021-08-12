@@ -1,31 +1,8 @@
-export const checkValidity = (value: string, rules: any) => {
-  let isValid = true;
-  if (!rules) {
-    return true;
-  }
+const _MS_PER_DAY = 1000 * 60 * 60 * 24;
 
-  if (rules.required) {
-    isValid = value.trim() !== '' && isValid;
-  }
+export const dateDiffInDays = (a: Date, b: Date) => {
+  const utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
+  const utc2 = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
 
-  if (rules.minLength) {
-    isValid = value.length >= rules.minLength && isValid;
-  }
-
-  if (rules.maxLength) {
-    isValid = value.length <= rules.maxLength && isValid;
-  }
-
-  if (rules.isEmail) {
-    const pattern =
-      /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
-    isValid = pattern.test(value) && isValid;
-  }
-
-  if (rules.isNumeric) {
-    const pattern = /^\d+$/;
-    isValid = pattern.test(value) && isValid;
-  }
-
-  return isValid;
+  return Math.floor((utc2 - utc1) / _MS_PER_DAY);
 };
