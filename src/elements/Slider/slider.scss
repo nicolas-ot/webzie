@@ -1,6 +1,7 @@
 @use '../../utilities/variables.module';
 
 .slick-slider {
+  margin: -10px 0;
   .slick-arrow {
     transform: scale(1.5) translate(0, -50%);
     border-radius: 100px;

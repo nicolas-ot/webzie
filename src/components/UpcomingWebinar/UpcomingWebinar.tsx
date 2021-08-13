@@ -14,12 +14,10 @@ const UpcomingWebinar = () => {
     />
   ));
   return (
-    <div className='user-home-wrapper'>
-      <div className='user-home-upcoming'>
-        <h3>Upcoming Webinar for You</h3>
-        <div className='slider-wrapper'>
-          <Slider>{WebinarList}</Slider>
-        </div>
+    <div className='user-home-upcoming'>
+      <h3>Upcoming Webinar for You</h3>
+      <div>
+        <Slider>{WebinarList}</Slider>
       </div>
     </div>
   );

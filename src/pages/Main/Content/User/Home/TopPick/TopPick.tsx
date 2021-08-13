@@ -1,3 +1,5 @@
+import './topPick.scss';
+
 import Webinar from './Webinar/Webinar';
 
 const TopPick = () => {

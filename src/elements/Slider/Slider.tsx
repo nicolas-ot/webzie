@@ -41,7 +41,7 @@ const Slider: React.FC<SliderProps> = ({ children }) => {
     dots: false,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     initialSlide: 0,
     infinite: true,
     nextArrow: <NextArrow />,
@@ -51,7 +51,7 @@ const Slider: React.FC<SliderProps> = ({ children }) => {
         breakpoint: 1245,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
         },
       },
       {
