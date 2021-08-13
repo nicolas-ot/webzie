@@ -1,8 +1,14 @@
+import styles from './cart.module.scss';
+
+import Layout from '../../hoc/Layout/Layout';
+
 const Cart = () => {
   return (
-    <div>
-      <div>cart</div>
-    </div>
+    <Layout>
+      <div>
+        <div>cart</div>
+      </div>
+    </Layout>
   );
 };
 

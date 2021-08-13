@@ -1,6 +1,7 @@
 import { ReactElement, ReactNode } from 'react';
 import { ContentProps } from '../../pages/Main/Content/Content';
 import Footer from './Footer/Footer';
+import styles from './layout.module.scss';
 
 import Navbar from './Navbar/Navbar';
 
@@ -10,9 +11,9 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className='main-layout'>
+    <div className={styles.MainLayout}>
       <Navbar />
-      <main className='main-page'>{children}</main>
+      <main className='main-page-wrapper'>{children}</main>
       <Footer />
     </div>
   );

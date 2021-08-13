@@ -14,19 +14,15 @@ const Main = () => {
     setActivePage('Home');
   }, [mode]);
   return (
-    // <div className='main'>
-    <>
-      <Layout>
-        <div className='main-content'>
-          <Sidebar
-            activePage={activePage}
-            setActivePage={setActivePage}
-          ></Sidebar>
-          <Content activePage={activePage} />
-        </div>
-      </Layout>
-    </>
-    // </div>
+    <Layout>
+      <div className='main-page-main-content'>
+        <Sidebar
+          activePage={activePage}
+          setActivePage={setActivePage}
+        ></Sidebar>
+        <Content activePage={activePage} />
+      </div>
+    </Layout>
   );
 };
 
