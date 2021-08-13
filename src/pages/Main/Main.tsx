@@ -1,18 +1,32 @@
 import './main.scss';
 
-import Layout from './Layout/Layout';
+import Layout from '../../hoc/Layout/Layout';
 import Content from './Content/Content';
+import Sidebar from './Sidebar/Sidebar';
+import { useEffect, useState } from 'react';
+import { useTypedSelector } from '../../hooks/use-typed-selector';
 
 const Main = () => {
+  const [activePage, setActivePage] = useState('Home');
+  const mode = useTypedSelector((state) => state.modes.mode);
+
+  useEffect(() => {
+    setActivePage('Home');
+  }, [mode]);
   return (
-    <div className='main'>
+    // <div className='main'>
+    <>
       <Layout>
-        {/* https://stackoverflow.com/questions/57091125/typescript-doesnt-know-that-component-gets-required-prop-from-hoc
-        Required props are given by Layout Component. Don't know how to implement this omit interface yet
- // @ts-ignore */}
-        <Content />
+        <div className='main-content'>
+          <Sidebar
+            activePage={activePage}
+            setActivePage={setActivePage}
+          ></Sidebar>
+          <Content activePage={activePage} />
+        </div>
       </Layout>
-    </div>
+    </>
+    // </div>
   );
 };
 

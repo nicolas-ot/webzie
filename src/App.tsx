@@ -5,6 +5,7 @@ import Auth from './pages/Auth/Auth';
 import Main from './pages/Main/Main';
 import { Provider } from 'react-redux';
 import { store } from './state';
+import Cart from './pages/Cart/Cart';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
             </Route>
             <Route path='/login'>
               <Auth />
+            </Route>
+            <Route path='/cart'>
+              <Cart />
             </Route>
           </Switch>
           {/* {react router: Landing, Main, SignIn/Up} */}
