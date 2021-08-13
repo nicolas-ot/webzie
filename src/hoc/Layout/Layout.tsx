@@ -1,5 +1,4 @@
-import { ReactElement, ReactNode } from 'react';
-import { ContentProps } from '../../pages/Main/Content/Content';
+import { ReactNode } from 'react';
 import Footer from './Footer/Footer';
 import styles from './layout.module.scss';
 

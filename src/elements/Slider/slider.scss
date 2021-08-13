@@ -1,18 +1,15 @@
 @use '../../utilities/variables.module';
 
 .slick-slider {
-  margin: 0 30px;
-
   .slick-arrow {
-    // border: 1px solid black;
-    // color: variables.$dark-purple;
-    // border-radius: 100px;
+    transform: scale(1.5) translate(0, -50%);
     border-radius: 100px;
     box-shadow: 0 0 10px #dddde3;
   }
 
   .slick-prev {
     z-index: 500;
+    left: 0;
     &:before {
       content: url(../../assets/images/icon_svg/arrow_drop_down.svg);
       transform: rotate(90deg);
@@ -23,6 +20,7 @@
 
   .slick-next {
     z-index: 500;
+    right: 0;
 
     &:before {
       content: url(../../assets/images/icon_svg/arrow_drop_down.svg);

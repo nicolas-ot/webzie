@@ -6,8 +6,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Settings } from 'react-slick';
 
-import withSubTitle from '../../hoc/withSubTitle/withSubTitle';
-
 interface SliderProps {
   children: ReactNode | ReactNode[];
 }

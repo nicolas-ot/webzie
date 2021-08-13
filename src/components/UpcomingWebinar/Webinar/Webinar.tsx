@@ -1,4 +1,5 @@
 import './webinar.scss';
+import variables from '../../../utilities/_variables.module.scss';
 
 import dateformat from 'dateformat';
 import { dateDiffInDays } from '../../../utilities/utility';
@@ -51,7 +52,7 @@ const Webinar: React.FC<WebinarProps> = ({
           </Button>
           <Button
             className='webinar-button-attend'
-            backgroundColor='lightgreen'
+            backgroundColor={variables['light-green']}
             onClick={() => null}
           >
             <span className='webinar-span-attend'>Attend</span>

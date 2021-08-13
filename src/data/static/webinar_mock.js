@@ -10,10 +10,23 @@ import image9 from '../../assets/images/poster_webinar/poster-juru-bahasa.jpeg';
 
 const data = [
   {
-    title: 'Pendidikan di Era New Normal Sesi 1',
+    benefit: [
+      "Speaker's Deck",
+      'Knowledge and skills directly from well-curated experts',
+    ],
+    category: 'business',
     date: new Date('November 19, 2021'),
-    time: '16:00 - 18:00',
+    description: 'webinar bagus sekali',
+    EC: true,
+    host: 'Arnold Kurniawan',
+    platform: 'Zoom',
     poster: image1,
+    price: 100000,
+    recommendation: [
+      'Junior level professionals with 1-3 years of experience in Design field',
+      'Business owner in Design fields',
+      'Anyone who is interested in Design topics',
+    ],
     speaker: [
       'Prof. Ir. Nirzam, M.Sc., Ph.D., IMP., ASEAN ENg.',
       'dr. Ketut Suarjaya, MPPM.',
@@ -22,24 +35,17 @@ const data = [
       'Sri Maharaja Wiralandagopala Sri Sundarapandya Dewa Adhiswara',
       'Raden Mas Sujana',
     ],
-    platform: 'Zoom',
-    category: 'business',
-    host: 'Arnold Kurniawan',
-    EC: true,
-    price: 100000,
-    description: 'webinar bagus sekali',
-    recommendation: [
-      'Junior level professionals with 1-3 years of experience in Design field',
-      'Business owner in Design fields',
-      'Anyone who is interested in Design topics',
-    ],
-    benefit: [
-      "Speaker's Deck",
-      'Knowledge and skills directly from well-curated experts',
-    ],
+    title: 'Pendidikan di Era New Normal Sesi 1',
+    attendee: 200,
+    rating: 4,
+    tickets_bought: 100,
+    time: '16:00 - 18:00',
   },
   {
     title: 'Pendidikan di Era New Normal Sesi 1',
+    attendee: 200,
+    rating: 4,
+    tickets_bought: 100,
     date: new Date('16/1/21'),
     time: '16:00 - 18:00',
     poster: image2,
@@ -69,6 +75,9 @@ const data = [
   },
   {
     title: 'Pendidikan di Era New Normal Sesi 1',
+    attendee: 200,
+    rating: 4,
+    tickets_bought: 100,
     date: new Date('16/1/21'),
     time: '16:00 - 18:00',
     poster: image3,
@@ -98,6 +107,9 @@ const data = [
   },
   {
     title: 'Pendidikan di Era New Normal Sesi 1',
+    attendee: 200,
+    rating: 4,
+    tickets_bought: 100,
     date: new Date('16/1/21'),
     time: '16:00 - 18:00',
     poster: image4,
@@ -127,6 +139,9 @@ const data = [
   },
   {
     title: 'Pendidikan di Era New Normal Sesi 1',
+    attendee: 200,
+    rating: 4,
+    tickets_bought: 100,
     date: new Date('16/1/21'),
     time: '16:00 - 18:00',
     poster: image5,
@@ -156,6 +171,9 @@ const data = [
   },
   {
     title: 'Pendidikan di Era New Normal Sesi 1',
+    attendee: 200,
+    rating: 4,
+    tickets_bought: 100,
     date: new Date('16/1/21'),
     time: '16:00 - 18:00',
     poster: image6,
@@ -185,6 +203,9 @@ const data = [
   },
   {
     title: 'Pendidikan di Era New Normal Sesi 1',
+    attendee: 200,
+    rating: 4,
+    tickets_bought: 100,
     date: new Date('16/1/21'),
     time: '16:00 - 18:00',
     poster: image7,
@@ -214,6 +235,9 @@ const data = [
   },
   {
     title: 'Pendidikan di Era New Normal Sesi 1',
+    attendee: 200,
+    rating: 4,
+    tickets_bought: 100,
     date: new Date('16/1/21'),
     time: '16:00 - 18:00',
     poster: image8,
@@ -243,6 +267,9 @@ const data = [
   },
   {
     title: 'Pendidikan di Era New Normal Sesi 1',
+    attendee: 200,
+    rating: 4,
+    tickets_bought: 100,
     date: new Date('December 17, 1995 03:24:00'),
     time: '16:00 - 18:00',
     poster: image9,

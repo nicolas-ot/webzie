@@ -6,8 +6,11 @@ import SearchBar from '../../../elements/SearchBar/SearchBar';
 import variables from '../../../utilities/_variables.module.scss';
 import { useActions } from '../../../hooks/use-actions';
 import { useTypedSelector } from '../../../hooks/use-typed-selector';
+import { Redirect } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 const Navbar = () => {
+  const history = useHistory();
   const { changeToHost, changeToUser } = useActions();
   const mode = useTypedSelector((state) => state.modes.mode);
 
@@ -31,9 +34,23 @@ const Navbar = () => {
       <div className='link-to-home'>Home</div>
       <div className='change-mode-button'>
         {mode === 'user' ? (
-          <Button onClick={changeToHost}>Webzie for Host</Button>
+          <Button
+            onClick={() => {
+              history.push('/');
+              changeToHost();
+            }}
+          >
+            Webzie for Host
+          </Button>
         ) : (
-          <Button onClick={changeToUser}>Webzie for User</Button>
+          <Button
+            onClick={() => {
+              history.push('/');
+              changeToUser();
+            }}
+          >
+            Webzie for User
+          </Button>
         )}
       </div>
       <Icon>

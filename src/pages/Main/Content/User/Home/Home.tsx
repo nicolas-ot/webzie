@@ -1,11 +1,14 @@
 import './home.scss';
-import Slider from '../../../../../elements/Slider/Slider';
-import Webinar from '../../../../../components/UpcomingWebinar/Webinar/Webinar';
-import webinarData from '../../../../../data/static/webinar_mock.js';
 import UpcomingWebinar from '../../../../../components/UpcomingWebinar/UpcomingWebinar';
+import TopPick from './TopPick/TopPick';
 
 const Home = () => {
-  return <UpcomingWebinar></UpcomingWebinar>;
+  return (
+    <div className='user-main-home-wrapper'>
+      <UpcomingWebinar />
+      <TopPick />
+    </div>
+  );
 };
 
 export default Home;
