@@ -20,11 +20,12 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 2em 2.5em 0.5em 2em;
+  padding: 2em 1.5em 0.5em 2em;
 }
 
 .slider-webinar-title {
   font-size: 1.2rem;
+  margin-bottom: 0.7em;
 }
 
 .slider-webinar-price {
@@ -79,7 +80,6 @@
 .webinar-slider-buttons-wrapper {
   display: flex;
   flex-direction: column;
-  margin-left: em;
 
   button {
     margin-bottom: 1.5rem;
@@ -93,7 +93,7 @@
   span {
     flex-shrink: 0;
     display: inline-block;
-    margin: 0.8rem 1.5rem;
+    margin: 0.7rem 1.5rem;
     font-size: 1.4rem;
     white-space: nowrap;
   }

@@ -5,16 +5,16 @@ import webinarData from '../../../../../../data/static/webinar_mock.js';
 
 interface WebinarSliderProps {
   title: string;
-  row?: number;
+  rows?: number;
 }
 
-const WebinarSlider: React.FC<WebinarSliderProps> = ({ title, row }) => {
+const WebinarSlider: React.FC<WebinarSliderProps> = ({ title, rows }) => {
   const webinarComponents = webinarData.map((webinar) => <Webinar />);
   return (
     <div className='main-home-webinar-slider-wrapper'>
       <h3>{title}</h3>
       <div className='main-webinar-slider-wrapper'>
-        <Slider>{webinarComponents}</Slider>
+        <Slider rows={rows}>{webinarComponents}</Slider>
       </div>
     </div>
   );

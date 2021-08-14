@@ -8,6 +8,7 @@ import { Settings } from 'react-slick';
 
 interface SliderProps {
   children: ReactNode | ReactNode[];
+  rows?: number;
 }
 
 interface ArrowProps {
@@ -36,7 +37,7 @@ const PrevArrow: React.FC<ArrowProps> = ({ className, style, onClick }) => {
   );
 };
 
-const Slider: React.FC<SliderProps> = ({ children }) => {
+const Slider: React.FC<SliderProps> = ({ children, rows }) => {
   const settings: Settings = {
     dots: false,
     speed: 500,
@@ -44,6 +45,7 @@ const Slider: React.FC<SliderProps> = ({ children }) => {
     slidesToScroll: 1,
     initialSlide: 0,
     infinite: true,
+    rows: rows || 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [

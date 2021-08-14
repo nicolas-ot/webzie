@@ -1,0 +1,30 @@
+@use '../../../../../../../utilities/variables.module';
+
+.Category {
+  display: flex;
+  height: 100px;
+  box-shadow: 0 0 10px #dddde3;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.Img {
+  height: 100%;
+  width: 50%;
+  min-width: 15em;
+  img {
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.Title {
+  width: 50%;
+  align-self: flex-end;
+  text-align: right;
+  font-size: 2.4rem;
+  color: variables.$dark-purple;
+  margin: 0 1em 1em 0;
+}

@@ -8,6 +8,8 @@ import image7 from '../../assets/images/poster_webinar/poster-environmental.jpg'
 import image8 from '../../assets/images/poster_webinar/poster-facebook-ads.jpg';
 import image9 from '../../assets/images/poster_webinar/poster-juru-bahasa.jpeg';
 
+// needs host rating data and host rating given
+
 const data = [
   {
     benefit: [
