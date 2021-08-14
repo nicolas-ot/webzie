@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/webzie/static/css/main.0d6707c9.chunk.css",
-    "main.js": "/webzie/static/js/main.6029b8d3.chunk.js",
-    "main.js.map": "/webzie/static/js/main.6029b8d3.chunk.js.map",
+    "main.js": "/webzie/static/js/main.fce9f84a.chunk.js",
+    "main.js.map": "/webzie/static/js/main.fce9f84a.chunk.js.map",
     "runtime-main.js": "/webzie/static/js/runtime-main.475b7505.js",
     "runtime-main.js.map": "/webzie/static/js/runtime-main.475b7505.js.map",
     "static/css/2.245eb72f.chunk.css": "/webzie/static/css/2.245eb72f.chunk.css",
@@ -48,6 +48,6 @@
     "static/css/2.245eb72f.chunk.css",
     "static/js/2.03ebc265.chunk.js",
     "static/css/main.0d6707c9.chunk.css",
-    "static/js/main.6029b8d3.chunk.js"
+    "static/js/main.fce9f84a.chunk.js"
   ]
 }
