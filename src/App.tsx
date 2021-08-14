@@ -10,7 +10,7 @@ import Cart from './pages/Cart/Cart';
 function App() {
   return (
     <Provider store={store}>
-      <Router basename='https://nicolas-ot.github.io/webzie'>
+      <Router basename={process.env.PUBLIC_URL + '/'}>
         <div className='App'>
           <Switch>
             <Route exact path='/'>
