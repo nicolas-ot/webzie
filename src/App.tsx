@@ -1,6 +1,12 @@
 import './app.scss';
 
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  HashRouter,
+} from 'react-router-dom';
 import Auth from './pages/Auth/Auth';
 import Main from './pages/Main/Main';
 import { Provider } from 'react-redux';
@@ -10,7 +16,7 @@ import Cart from './pages/Cart/Cart';
 function App() {
   return (
     <Provider store={store}>
-      <Router basename={process.env.PUBLIC_URL + '/'}>
+      <HashRouter basename={process.env.PUBLIC_URL + '/'}>
         <div className='App'>
           <Switch>
             <Route exact path='/'>
@@ -25,7 +31,7 @@ function App() {
           </Switch>
           {/* {react router: Landing, Main, SignIn/Up} */}
         </div>
-      </Router>
+      </HashRouter>
     </Provider>
   );
 }
