@@ -1,0 +1,35 @@
+@use '../../utilities/variables.module';
+
+.data-sorting-possibilities-wrapper {
+  box-shadow: 0 0 10px #dddde3;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 1.5em 1em 0 1.4em;
+
+  .active {
+    background-color: variables.$dark-purple;
+    color: white;
+  }
+
+  h5 {
+    color: variables.$dark-purple;
+    font-size: 2.4rem;
+    margin-bottom: 1.8rem;
+  }
+
+  ul {
+    margin-bottom: 2.5rem;
+  }
+
+  li {
+    width: 15rem;
+    font-size: 1.4rem;
+    border-radius: 20px;
+    list-style: none;
+    margin-left: 0.5rem;
+    margin-bottom: 1.8rem;
+    padding: 0.8rem 1.5rem;
+    box-sizing: border-box;
+    color: variables.$light-purple;
+  }
+}
