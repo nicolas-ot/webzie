@@ -3,6 +3,7 @@ import Sort from '../../../../../components/Sort/Sort';
 import './eCertificate.scss';
 
 import SortingType from '../../../../../utilities/enum/sort';
+import WebinarTable from '../../../../../components/WebinarTable/WebinarTable';
 
 const ECertificate = () => {
   const [sort, setSort] = useState<SortingType[keyof SortingType]>(
@@ -12,13 +13,11 @@ const ECertificate = () => {
     <div className='e-certificate-main-wrapper'>
       <h3>E-Certificate</h3>
       <div className='e-certificate-content-wrapper'>
-        <div className='e-certificate-sorting-wrapper'>
-          <Sort
-            active={sort}
-            onClick={(sort: SortingType[keyof SortingType]) => setSort(sort)}
-          />
-        </div>
-        <div className='e-certificate-list-wrapper'></div>
+        <Sort
+          active={sort}
+          onClick={(sort: SortingType[keyof SortingType]) => setSort(sort)}
+        />
+        <WebinarTable />
       </div>
     </div>
   );

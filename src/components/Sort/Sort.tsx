@@ -11,10 +11,7 @@ const Sort: React.FC<SortProps> = ({ active, onClick }) => {
   return (
     <div className='data-sorting-possibilities-wrapper'>
       <h5>Sort</h5>
-      <ul
-        onChange={(event) => console.log(event)}
-        className='sorting-list-wrapper'
-      >
+      <ul className='sorting-list-wrapper'>
         {(Object.values(SortingType) as Array<ValueOfSortingType>).map(
           (sort) => (
             <li
