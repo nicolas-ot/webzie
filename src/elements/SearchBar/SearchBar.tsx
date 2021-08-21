@@ -3,10 +3,10 @@ import { useEffect } from 'react';
 import './searhBar.scss';
 
 interface SearchBarProps {
-  width?: string;
+  withResult?: boolean;
 }
 
-const SearchBar: React.FC<SearchBarProps> = () => {
+const SearchBar: React.FC<SearchBarProps> = ({ withResult }) => {
   const [input, setInput] = useState('');
 
   useEffect(() => {
@@ -36,19 +36,25 @@ const SearchBar: React.FC<SearchBarProps> = () => {
         </button>
         <input
           type='text'
-          placeholder='Search for anything'
+          placeholder={withResult ? 'Search for anything' : ''}
           onChange={(event) => setInput(event.target.value)}
         />
       </form>
-      <div
-        className={
-          'home-search-result ' + (input.length >= 2 ? 'expand' : 'shrink')
-        }
-      >
-        {input}
-      </div>
+      {withResult && (
+        <div
+          className={
+            'home-search-result ' + (input.length >= 2 ? 'expand' : 'shrink')
+          }
+        >
+          {input}
+        </div>
+      )}
     </div>
   );
+};
+
+SearchBar.defaultProps = {
+  withResult: true,
 };
 
 export default SearchBar;

@@ -1,10 +1,33 @@
 import './webinarDetails.scss';
 
-const WebinarDetails = () => {
+interface WebinarDetailsProps {
+  poster: string;
+  date: Date;
+  time: string;
+  category: string;
+  host: string;
+}
+
+const WebinarDetails: React.FC<WebinarDetailsProps> = ({
+  poster,
+  date,
+  time,
+  category,
+  host,
+}) => {
   return (
-    <div className='webinar-details-wrapper'>
-      <div>webinardetails</div>
-    </div>
+    <>
+      <img
+        className='webinar-table-details-poster'
+        src={poster}
+        alt='poster'
+      ></img>
+      <div>1</div>
+      {/* <div>{date}</div> */}
+      <div>{time}</div>
+      <div>{category}</div>
+      <div>{host}</div>
+    </>
   );
 };
 
