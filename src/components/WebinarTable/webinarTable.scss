@@ -1,7 +1,10 @@
 @use '../../utilities/variables.module';
 
 .webinar-table-wrapper {
+  border-spacing: 0 15px;
+
   margin-left: 2.6rem;
+  font-size: 1.8rem;
   width: 100%;
   font-size: 1.8rem;
 
@@ -15,14 +18,30 @@
     font-size: 1em;
     color: variables.$dark-purple;
   }
+
+  .table-header {
+    .name {
+      width: 1%;
+    }
+    .column {
+      padding-bottom: 1rem;
+    }
+  }
 }
 
 .webinar-table-information-wrapper {
-  display: grid;
+  display: table;
+  width: 100%;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
 
-  div {
-    height: 100px;
+  .row {
+    vertical-align: middle;
+    display: table-row;
+  }
+
+  .column {
+    vertical-align: middle;
+    display: table-cell;
   }
 }
