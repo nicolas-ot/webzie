@@ -1,0 +1,24 @@
+@use '../../utilities/variables.module';
+
+.coming-soon-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: variables.$dark-purple;
+  div {
+    transform-origin: top right;
+    transform: rotate(330deg) translate(0px, -200px);
+    position: absolute;
+    opacity: 30%;
+
+    font-size: 100%;
+    inset: 0;
+    // text-align: justify;
+  }
+
+  div:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
+}

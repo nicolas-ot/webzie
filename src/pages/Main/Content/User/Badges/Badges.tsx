@@ -1,7 +1,11 @@
+import './badges.scss';
+
+import ComingSoon from '../../../../../elements/ComingSoon/ComingSoon';
+
 const Badges = () => {
   return (
-    <div>
-      <div>badges</div>
+    <div className='badges' style={{ position: 'relative' }}>
+      <ComingSoon />
     </div>
   );
 };
