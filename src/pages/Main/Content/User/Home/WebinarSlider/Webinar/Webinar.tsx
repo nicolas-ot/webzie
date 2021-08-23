@@ -1,6 +1,5 @@
 import dateformat from 'dateformat';
 import poster from '../../../../../../../assets/images/poster_webinar/poster-covid.jpg';
-import variables from '../../../../../../../utilities/_variables.module.scss';
 import webinar from '../../../../../../../data/static/webinar_mock.js';
 import Button from '../../../../../../../elements/Button/Button';
 
@@ -57,10 +56,7 @@ const Webinar = () => {
         </div>
         <div className='webinar-slider-most-left'>
           <div className='webinar-slider-buttons-wrapper'>
-            <Button
-              backgroundColor={variables['light-green']}
-              onClick={() => null}
-            >
+            <Button backgroundColor={'light-green'} onClick={() => null}>
               <span>Register</span>
             </Button>
             <Button onClick={() => null}>

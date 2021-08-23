@@ -17,8 +17,16 @@ const Button: React.FC<ButtonProps> = ({
   backgroundColor,
   className,
 }) => {
+  let buttonColor;
+  switch (backgroundColor) {
+    case 'light-green':
+      buttonColor = variables['light-green'];
+      break;
+    default:
+      buttonColor = variables['dark-purple'];
+  }
   const CSS = {
-    backgroundColor: backgroundColor || variables['dark-purple'],
+    backgroundColor: buttonColor,
     color: color || 'white',
     border: 'none',
     borderRadius: '90px',

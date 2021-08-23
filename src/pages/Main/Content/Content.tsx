@@ -5,7 +5,7 @@ import { useTypedSelector } from '../../../hooks/use-typed-selector';
 import Badges from './User/Badges/Badges';
 import UserHome from './User/Home/Home';
 import MyCalendar from './User/MyCalendar/McCalendar';
-import MyWebinar from './User/MyWebinars/MyWebinar';
+import MyWebinar from './User/MyWebinars/MyWebinars';
 import UserHistory from './User/History/History';
 
 // host

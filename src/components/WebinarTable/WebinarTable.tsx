@@ -19,15 +19,17 @@ const WebinarTable = () => {
   return (
     <div className='webinar-table-wrapper'>
       <SearchBar withResult={false} />
-      <div className='webinar-table-information-wrapper'>
-        <div className='table-header row'>
-          <h6 className='column name'>Name</h6>
-          <h6 className='column'>Date</h6>
-          <h6 className='column'>Time</h6>
-          <h6 className='column'>Category</h6>
-          <h6 className='column'>Host</h6>
+      <div className='webinar-table-overflow'>
+        <div className='webinar-table-information-wrapper'>
+          <div className='table-header row'>
+            <h6 className='column name'>Name</h6>
+            <h6 className='column'>Date</h6>
+            <h6 className='column'>Time</h6>
+            <h6 className='column'>Category</h6>
+            <h6 className='column'>Host</h6>
+          </div>
+          {webinarDetailsComponent}
         </div>
-        {webinarDetailsComponent}
       </div>
     </div>
   );

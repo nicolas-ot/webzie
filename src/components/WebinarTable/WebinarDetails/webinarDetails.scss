@@ -25,12 +25,17 @@
   .category {
     font-weight: 600;
   }
-
-  .button-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 10em;
-    margin: 0;
+  .buttons {
+    .button-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    button:first-child {
+      margin-bottom: 1.6rem;
+    }
+    button {
+      width: 7em;
+    }
   }
 }
 

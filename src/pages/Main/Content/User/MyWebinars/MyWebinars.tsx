@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Sort from '../../../../../components/Sort/Sort';
-import './history.scss';
+import './myWebinars.scss';
 
 import SortingType from '../../../../../utilities/enum/sort';
 import WebinarTable from '../../../../../components/WebinarTable/WebinarTable';
@@ -10,9 +10,9 @@ const History = () => {
     SortingType.NAME
   );
   return (
-    <div className='history-main-wrapper'>
-      <h3>History</h3>
-      <div className='history-content-wrapper'>
+    <div className='my-webinars-main-wrapper'>
+      <h3>My Webinars</h3>
+      <div className='my-webinars-content-wrapper'>
         <Sort
           active={sort}
           onClick={(sort: SortingType[keyof SortingType]) => setSort(sort)}

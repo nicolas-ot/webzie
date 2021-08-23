@@ -28,17 +28,19 @@ const WebinarDetails: React.FC<WebinarDetailsProps> = ({
           src={poster}
           alt='poster'
         ></img>
-        <div className='title'>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, ex.
-        </div>
+        <div className='title'>{title}</div>
       </div>
       <div className='column'>{dateformat(now, 'dddd, mmmm dd')}</div>
       <div className='column'>{time}</div>
       <div className='column category'>{category}</div>
       <div className='column'>{host}</div>
-      <div className='button-wrapper'>
-        <Button onClick={() => null}>Download</Button>
-        <Button onClick={() => null}>View</Button>
+      <div className='column buttons'>
+        <div className='button-wrapper'>
+          <Button backgroundColor='light-green' onClick={() => null}>
+            Download
+          </Button>
+          <Button onClick={() => null}>View</Button>
+        </div>
       </div>
     </div>
   );
