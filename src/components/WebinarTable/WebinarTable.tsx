@@ -5,7 +5,11 @@ import WebinarDetails from './WebinarDetails/WebinarDetails';
 
 import webinarData from '../../data/static/webinar_mock.js';
 
-const WebinarTable = () => {
+interface WebinarTableProps {
+  myWebinars?: boolean;
+}
+
+const WebinarTable: React.FC<WebinarTableProps> = ({ myWebinars }) => {
   const webinarDetailsComponent = webinarData.map((webinar) => (
     <WebinarDetails
       title={webinar.title}
@@ -14,6 +18,7 @@ const WebinarTable = () => {
       host={webinar.host}
       time={webinar.time}
       category={webinar.category}
+      status={myWebinars ? webinar.status : undefined}
     />
   ));
   return (
@@ -27,6 +32,7 @@ const WebinarTable = () => {
             <h6 className='column'>Time</h6>
             <h6 className='column'>Category</h6>
             <h6 className='column'>Host</h6>
+            {myWebinars && <h6 className='column'>Status</h6>}
           </div>
           {webinarDetailsComponent}
         </div>

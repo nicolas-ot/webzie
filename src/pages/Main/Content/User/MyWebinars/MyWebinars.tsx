@@ -17,7 +17,7 @@ const History = () => {
           active={sort}
           onClick={(sort: SortingType[keyof SortingType]) => setSort(sort)}
         />
-        <WebinarTable />
+        <WebinarTable myWebinars={true} />
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ interface WebinarDetailsProps {
   category: string;
   host: string;
   title: string;
+  status?: string;
 }
 
 const WebinarDetails: React.FC<WebinarDetailsProps> = ({
@@ -18,6 +19,7 @@ const WebinarDetails: React.FC<WebinarDetailsProps> = ({
   time,
   category,
   host,
+  status,
 }) => {
   const now = new Date();
   return (
@@ -34,6 +36,7 @@ const WebinarDetails: React.FC<WebinarDetailsProps> = ({
       <div className='column'>{time}</div>
       <div className='column category'>{category}</div>
       <div className='column'>{host}</div>
+      {status && <div className='column'>{status}</div>}
       <div className='column buttons'>
         <div className='button-wrapper'>
           <Button backgroundColor='light-green' onClick={() => null}>

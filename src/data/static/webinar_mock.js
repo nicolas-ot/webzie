@@ -39,13 +39,15 @@ const data = [
     ],
     title: 'Pendidikan di Era New Normal Sesi 1',
     attendee: 200,
+    status: 'On Going',
     rating: 4,
     tickets_bought: 100,
     time: '16:00 - 18:00',
   },
   {
-    title: 'Pendidikan di Era New Normal Sesi 1',
+    title: 'Cryptocurrencies for Dummmies - Belajar Kerja Pintar',
     attendee: 200,
+    status: 'Waiting',
     rating: 4,
     tickets_bought: 100,
     date: new Date('16/1/21'),
@@ -78,6 +80,7 @@ const data = [
   {
     title: 'Pendidikan di Era New Normal Sesi 1',
     attendee: 200,
+    status: 'On Going',
     rating: 4,
     tickets_bought: 100,
     date: new Date('16/1/21'),
@@ -110,6 +113,7 @@ const data = [
   {
     title: 'Pendidikan di Era New Normal Sesi 1',
     attendee: 200,
+    status: 'On Going',
     rating: 4,
     tickets_bought: 100,
     date: new Date('16/1/21'),
@@ -142,6 +146,7 @@ const data = [
   {
     title: 'Pendidikan di Era New Normal Sesi 1',
     attendee: 200,
+    status: 'On Going',
     rating: 4,
     tickets_bought: 100,
     date: new Date('16/1/21'),
@@ -174,6 +179,7 @@ const data = [
   {
     title: 'Pendidikan di Era New Normal Sesi 1',
     attendee: 200,
+    status: 'On Going',
     rating: 4,
     tickets_bought: 100,
     date: new Date('16/1/21'),
@@ -206,6 +212,7 @@ const data = [
   {
     title: 'Pendidikan di Era New Normal Sesi 1',
     attendee: 200,
+    status: 'On Going',
     rating: 4,
     tickets_bought: 100,
     date: new Date('16/1/21'),
@@ -238,6 +245,7 @@ const data = [
   {
     title: 'Pendidikan di Era New Normal Sesi 1',
     attendee: 200,
+    status: 'On Going',
     rating: 4,
     tickets_bought: 100,
     date: new Date('16/1/21'),
@@ -270,6 +278,7 @@ const data = [
   {
     title: 'Pendidikan di Era New Normal Sesi 1',
     attendee: 200,
+    status: 'On Going',
     rating: 4,
     tickets_bought: 100,
     date: new Date('December 17, 1995 03:24:00'),
