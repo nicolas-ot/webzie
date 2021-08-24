@@ -37,7 +37,7 @@ const WebinarDetails: React.FC<WebinarDetailsProps> = ({
       <div className='column category'>{category}</div>
       <div className='column'>{host}</div>
       {status && (
-        <div className='column'>
+        <div className='column status'>
           <Button backgroundColor='light-green'>{status}</Button>
         </div>
       )}
