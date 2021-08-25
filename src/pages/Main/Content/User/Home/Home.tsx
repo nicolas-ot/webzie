@@ -1,8 +1,8 @@
 import './home.scss';
-import UpcomingWebinar from '../../../../../components/UpcomingWebinar/UpcomingWebinar';
-import TopPick from './TopPick/TopPick';
-import WebinarSlider from './WebinarSlider/WebinarSlider';
 import Categories from './Categories/Categories';
+import TopPick from './TopPick/TopPick';
+import UpcomingWebinar from '../../../../../components/UpcomingWebinar/UpcomingWebinar';
+import WebinarSlider from './WebinarSlider/WebinarSlider';
 
 const Home = () => {
   return (

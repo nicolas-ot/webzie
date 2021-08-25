@@ -1,5 +1,4 @@
 import { ReactNode } from 'react';
-import styles from './button.module.scss';
 import variables from '../../utilities/_variables.module.scss';
 
 interface ButtonProps {
@@ -7,9 +6,8 @@ interface ButtonProps {
   backgroundColor?: string;
   className?: string;
   children: ReactNode;
-  onClick: () => void;
+  onClick?: () => void;
 }
-
 const Button: React.FC<ButtonProps> = ({
   children,
   onClick,
@@ -17,17 +15,29 @@ const Button: React.FC<ButtonProps> = ({
   backgroundColor,
   className,
 }) => {
+  let buttonColor;
+  switch (backgroundColor) {
+    case 'light-green':
+      buttonColor = variables['light-green'];
+      break;
+    default:
+      buttonColor = variables['dark-purple'];
+  }
   const CSS = {
-    backgroundColor: backgroundColor || variables['dark-purple'],
+    backgroundColor: buttonColor,
     color: color || 'white',
     border: 'none',
     borderRadius: '90px',
     padding: '2px 1em',
     flexShrink: 0,
-    cursor: 'pointer',
+    cursor: typeof onClick === 'function' ? 'pointer' : 'default',
   };
   return (
-    <button style={CSS} className={className} onClick={() => onClick()}>
+    <button
+      style={CSS}
+      className={className}
+      onClick={typeof onClick === 'function' ? () => onClick() : undefined}
+    >
       {children}
     </button>
   );

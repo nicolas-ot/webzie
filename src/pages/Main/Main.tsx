@@ -7,11 +7,11 @@ import { useEffect, useState } from 'react';
 import { useTypedSelector } from '../../hooks/use-typed-selector';
 
 const Main = () => {
-  const [activePage, setActivePage] = useState('E-Certificate');
+  const [activePage, setActivePage] = useState('My Calendar');
   const mode = useTypedSelector((state) => state.modes.mode);
 
   useEffect(() => {
-    setActivePage('E-Certificate');
+    setActivePage('My Calendar');
   }, [mode]);
   return (
     <Layout>

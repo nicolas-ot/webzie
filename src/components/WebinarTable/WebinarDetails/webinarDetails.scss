@@ -1,4 +1,54 @@
+@use '../../../utilities/variables.module';
+
+.webinar-table-details-wrapper {
+  box-shadow: variables.$box-shadow;
+
+  // .column:is(:nth-child(2n), :nth-child(3)) {
+  //   background-color: red;
+  //   white-space: nowrap;
+  // }
+  .image-and-title {
+    display: flex;
+    align-items: center;
+
+    padding-right: 2em;
+    // width: clamp(24em, 100%, 28em);
+    // max-width: 28em;
+    min-width: 26em;
+    font-weight: 600;
+  }
+
+  .title {
+    margin-left: 1rem;
+  }
+
+  .category {
+    font-weight: 600;
+  }
+
+  .status {
+    button {
+      width: 5rem;
+    }
+  }
+
+  .buttons {
+    .button-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    button:first-child {
+      margin-bottom: 1.6rem;
+    }
+    button {
+      width: 7em;
+    }
+  }
+}
+
 .webinar-table-details-poster {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  height: 10em;
+  width: min-content;
 }
