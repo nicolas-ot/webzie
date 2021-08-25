@@ -17,8 +17,8 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   let buttonColor;
   switch (backgroundColor) {
-    case 'light-green':
-      buttonColor = variables['light-green'];
+    case 'dark-green':
+      buttonColor = variables['dark-green'];
       break;
     default:
       buttonColor = variables['dark-purple'];
