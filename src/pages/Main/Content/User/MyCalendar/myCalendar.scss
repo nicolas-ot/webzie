@@ -9,6 +9,31 @@
 
   .calendar-wrapper {
     width: 100%;
+    font-size: 1.2rem;
+
+    .rbc-row-content {
+      padding: 1rem 0;
+    }
+    // .rbc-event-allday {
+    //   margin-top: 1rem;
+    // }
+
+    .rbc-allday-cell {
+      height: unset;
+    }
+
+    .rbc-header {
+      font-size: 1.8rem;
+      padding: 1.5rem 0;
+      background-color: variables.$dark-purple;
+      color: white;
+    }
+
+    .rbc-agenda-table {
+      .rbc-header {
+        padding-left: 1rem;
+      }
+    }
   }
   .upcoming-webinar-wrapper {
     width: 50%;
@@ -21,6 +46,17 @@
 
     h3 {
       margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .my-calendar-wrapper {
+    flex-direction: column;
+    height: 160vh;
+
+    .upcoming-webinar-wrapper {
+      margin-top: 3rem;
     }
   }
 }

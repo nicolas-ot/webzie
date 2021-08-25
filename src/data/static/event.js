@@ -133,7 +133,7 @@ const event = [
     id: 145,
     title: 'Today until tomorrow',
     start: new Date(new Date().setHours(new Date().getHours() - 5)),
-    end: new Date(new Date().setHours(new Date().getHours() + 25)),
+    end: new Date(new Date().setHours(new Date().getHours() + 50)),
   },
 
   {
