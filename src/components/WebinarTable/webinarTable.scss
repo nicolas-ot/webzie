@@ -1,0 +1,28 @@
+@use '../../utilities/variables.module';
+
+.webinar-table-wrapper {
+  margin-left: 2.6rem;
+  width: 100%;
+  font-size: 1.8rem;
+
+  .home-search-bar-wrapper {
+    margin-left: 0;
+    width: 40rem;
+    margin-bottom: 3rem;
+  }
+
+  h6 {
+    font-size: 1em;
+    color: variables.$dark-purple;
+  }
+}
+
+.webinar-table-information-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+
+  div {
+    height: 100px;
+  }
+}
