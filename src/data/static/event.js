@@ -129,6 +129,12 @@ const event = [
     start: now,
     end: new Date(new Date().setHours(new Date().getHours() + 3)),
   },
+  {
+    id: 145,
+    title: 'Today until tomorrow',
+    start: new Date(new Date().setHours(new Date().getHours() - 5)),
+    end: new Date(new Date().setHours(new Date().getHours() + 25)),
+  },
 
   {
     id: 16,

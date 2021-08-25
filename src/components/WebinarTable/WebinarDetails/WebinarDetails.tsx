@@ -38,12 +38,12 @@ const WebinarDetails: React.FC<WebinarDetailsProps> = ({
       <div className='column'>{host}</div>
       {status && (
         <div className='column status'>
-          <Button backgroundColor='light-green'>{status}</Button>
+          <Button backgroundColor='dark-green'>{status}</Button>
         </div>
       )}
       <div className='column buttons'>
         <div className='button-wrapper'>
-          <Button backgroundColor='light-green' onClick={() => null}>
+          <Button backgroundColor='dark-green' onClick={() => null}>
             Download
           </Button>
           <Button onClick={() => null}>View</Button>

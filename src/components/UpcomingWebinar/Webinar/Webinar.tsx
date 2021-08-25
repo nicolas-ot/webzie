@@ -52,7 +52,7 @@ const Webinar: React.FC<WebinarProps> = ({
           </Button>
           <Button
             className='webinar-button-attend'
-            backgroundColor={'light-green'}
+            backgroundColor={'dark-green'}
             onClick={() => null}
           >
             <span className='webinar-span-attend'>Attend</span>

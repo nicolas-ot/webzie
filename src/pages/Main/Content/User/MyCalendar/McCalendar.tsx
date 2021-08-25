@@ -1,38 +1,29 @@
-import { Calendar, dateFnsLocalizer } from 'react-big-calendar';
-import 'react-big-calendar/lib/css/react-big-calendar.css';
-import events from '../../../../../data/static/event.js';
-import format from 'date-fns/format';
-import parse from 'date-fns/parse';
-import startOfWeek from 'date-fns/startOfWeek';
-import getDay from 'date-fns/getDay';
-import enUS from 'date-fns/locale/en-US';
-
-const locales = {
-  'en-US': enUS,
-};
-
-const localizer = dateFnsLocalizer({
-  format,
-  parse,
-  startOfWeek,
-  getDay,
-  locales,
-});
-
-const myEventsList = {
-  start: 'tes',
-};
+import './myCalendar.scss';
+import Calendar from './Calendar/Calendar';
+import webinarData from '../../../../../data/static/webinar_mock.js';
+import Webinar from '../../../../../components/UpcomingWebinar/Webinar/Webinar';
 
 const MyCalendar = () => {
+  const WebinarList = webinarData.map((webinar) => (
+    <Webinar
+      title={webinar.title}
+      date={webinar.date}
+      time={webinar.time}
+      host={webinar.host}
+      image={webinar.poster}
+    />
+  ));
+
   return (
-    <div>
-      <Calendar
-        localizer={localizer}
-        events={events}
-        startAccessor='start'
-        endAccessor='end'
-        style={{ height: 500 }}
-      />
+    <div className='my-calendar-wrapper'>
+      <div className='calendar-wrapper'>
+        <Calendar />
+      </div>
+
+      <div className='upcoming-webinar-wrapper'>
+        <h3>Upcoming Webinar</h3>
+        <div>{WebinarList}</div>
+      </div>
     </div>
   );
 };

@@ -58,7 +58,7 @@ const Webinar = () => {
         </div>
         <div className='webinar-top-pick-most-left'>
           <div className='webinar-top-pick-buttons-wrapper'>
-            <Button backgroundColor={'light-green'} onClick={() => null}>
+            <Button backgroundColor={'dark-green'} onClick={() => null}>
               <span>Register</span>
             </Button>
             <Button onClick={() => null}>
