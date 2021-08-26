@@ -2,7 +2,6 @@ import { useState } from 'react';
 import styles from './cart.module.scss';
 import webinars from '../../data/static/webinar_mock.js';
 
-import Layout from '../../hoc/Layout/Layout';
 import Summary from '../Cart/Summary/Summary';
 import Webinar from './Webinar/Webinar';
 import Payment from './Payment/Payment';
@@ -10,14 +9,18 @@ import Payment from './Payment/Payment';
 const Cart = () => {
   const [payment, setPayment] = useState(false);
 
-  const webinarList = webinars.map((webinar) => (
-    <Webinar
-      poster={webinar.poster}
-      host={webinar.host}
-      price={webinar.price}
-      title={webinar.title}
-    />
-  ));
+  let subTotal = 0;
+  const webinarList = webinars.map((webinar) => {
+    subTotal += webinar.price;
+    return (
+      <Webinar
+        poster={webinar.poster}
+        host={webinar.host}
+        price={webinar.price}
+        title={webinar.title}
+      />
+    );
+  });
 
   return (
     <div>
@@ -48,7 +51,12 @@ const Cart = () => {
             <div className={styles.cart_right}>
               <div className={styles.box_price_information}>
                 <h1>Summary</h1>
-                {!payment && <Summary onClick={() => setPayment(true)} />}
+                {!payment && (
+                  <Summary
+                    subTotal={subTotal}
+                    onClick={() => setPayment(true)}
+                  />
+                )}
                 {payment && <Payment />}
               </div>
             </div>

@@ -28,7 +28,7 @@ const data = [
     host: 'Arnold Kurniawan',
     platform: 'Zoom',
     poster: image1,
-    price: currencyFormatter.format(100000),
+    price: 100000,
     recommendation: [
       'Junior level professionals with 1-3 years of experience in Design field',
       'Business owner in Design fields',
@@ -70,7 +70,7 @@ const data = [
     category: 'business',
     host: 'Arnold Kurniawan',
     EC: true,
-    price: currencyFormatter.format(100000),
+    price: 100000,
     description: 'webinar bagus sekali',
     recommendation: [
       'Junior level professionals with 1-3 years of experience in Design field',
@@ -103,7 +103,7 @@ const data = [
     category: 'business',
     host: 'Arnold Kurniawan',
     EC: true,
-    price: currencyFormatter.format(100000),
+    price: 100000,
     description: 'webinar bagus sekali',
     recommendation: [
       'Junior level professionals with 1-3 years of experience in Design field',
@@ -136,7 +136,7 @@ const data = [
     category: 'business',
     host: 'Arnold Kurniawan',
     EC: true,
-    price: currencyFormatter.format(100000),
+    price: 100000,
     description: 'webinar bagus sekali',
     recommendation: [
       'Junior level professionals with 1-3 years of experience in Design field',
@@ -169,7 +169,7 @@ const data = [
     category: 'business',
     host: 'Arnold Kurniawan',
     EC: true,
-    price: currencyFormatter.format(100000),
+    price: 100000,
     description: 'webinar bagus sekali',
     recommendation: [
       'Junior level professionals with 1-3 years of experience in Design field',
@@ -202,7 +202,7 @@ const data = [
     category: 'business',
     host: 'Arnold Kurniawan',
     EC: true,
-    price: currencyFormatter.format(100000),
+    price: 100000,
     description: 'webinar bagus sekali',
     recommendation: [
       'Junior level professionals with 1-3 years of experience in Design field',
@@ -235,7 +235,7 @@ const data = [
     category: 'business',
     host: 'Arnold Kurniawan',
     EC: true,
-    price: currencyFormatter.format(100000),
+    price: 100000,
     description: 'webinar bagus sekali',
     recommendation: [
       'Junior level professionals with 1-3 years of experience in Design field',
@@ -268,7 +268,7 @@ const data = [
     category: 'business',
     host: 'Arnold Kurniawan',
     EC: true,
-    price: currencyFormatter.format(100000),
+    price: 100000,
     description: 'webinar bagus sekali',
     recommendation: [
       'Junior level professionals with 1-3 years of experience in Design field',
@@ -301,7 +301,7 @@ const data = [
     category: 'business',
     host: 'Arnold Kurniawan',
     EC: true,
-    price: currencyFormatter.format(100000),
+    price: 100000,
     description: 'webinar bagus sekali',
     recommendation: [
       'Junior level professionals with 1-3 years of experience in Design field',

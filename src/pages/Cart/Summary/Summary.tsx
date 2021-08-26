@@ -1,24 +1,26 @@
 import styles from './Summary.module.scss';
+import { currencyFormatter } from '../../../utilities/utility';
 
 interface SummaryProps {
   onClick: () => void;
+  subTotal: number;
 }
 
-const Summary: React.FC<SummaryProps> = ({ onClick }) => {
+const serviceFee = 25000;
+
+const Summary: React.FC<SummaryProps> = ({ onClick, subTotal }) => {
   return (
     <div className={styles.SummaryWrapper}>
       <div className={styles.total}>
         <p>Subtotal</p>
         <div className={styles.nominal}>
-          <p>Rp</p>
-          <p>1.000.000,-</p>
+          <p>{currencyFormatter.format(subTotal)}</p>
         </div>
       </div>
       <div className={styles.total}>
         <p>Service Fee</p>
         <div className={styles.nominal}>
-          <p>Rp</p>
-          <p>25.000,-</p>
+          <p>{currencyFormatter.format(serviceFee)}</p>
         </div>
       </div>
       <div className={styles.discount}>
@@ -47,10 +49,7 @@ const Summary: React.FC<SummaryProps> = ({ onClick }) => {
       <div className={styles.total}>
         <p>Total</p>
         <div className={styles.nominal}>
-          <p>Rp</p>
-          <p>
-            <b>1.025.000,-</b>
-          </p>
+          <p>{currencyFormatter.format(subTotal + serviceFee)}</p>
         </div>
       </div>
       <div className={styles.button_checkout}>

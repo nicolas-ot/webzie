@@ -1,10 +1,12 @@
 import styles from './webinar.module.scss';
 
+import { currencyFormatter } from '../../../utilities/utility';
+
 interface WebinarProps {
   poster: string;
   title: string;
   host: string;
-  price: string;
+  price: number;
 }
 
 const Webinar: React.FC<WebinarProps> = ({ poster, title, host, price }) => {
@@ -20,7 +22,7 @@ const Webinar: React.FC<WebinarProps> = ({ poster, title, host, price }) => {
           <p>{host}</p>
         </div>
         <div className={styles.information_right}>
-          <h1>{price}</h1>
+          <h1>{currencyFormatter.format(price)}</h1>
           <div className={styles.image}>
             <img
               src={

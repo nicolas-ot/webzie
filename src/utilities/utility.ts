@@ -6,3 +6,8 @@ export const dateDiffInDays = (a: Date, b: Date) => {
 
   return Math.floor((utc2 - utc1) / _MS_PER_DAY);
 };
+
+export const currencyFormatter = new Intl.NumberFormat('in-ID', {
+  style: 'currency',
+  currency: 'IDR',
+});
