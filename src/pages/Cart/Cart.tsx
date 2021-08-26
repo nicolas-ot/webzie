@@ -1,9 +1,20 @@
 import styles from './cart.module.scss';
+import webinars from '../../data/static/webinar_mock.js';
 
 import Layout from '../../hoc/Layout/Layout';
 import Summary from '../Cart/Summary/Summary';
+import Webinar from './Webinar/Webinar';
 
 const Cart = () => {
+  const webinarList = webinars.map((webinar) => (
+    <Webinar
+      poster={webinar.poster}
+      host={webinar.host}
+      price={webinar.price}
+      title={webinar.title}
+    />
+  ));
+
   return (
     <Layout>
       <div>
@@ -16,175 +27,24 @@ const Cart = () => {
               <div className={styles.cart_left}>
                 <div className={styles.left_top}>
                   <div className={styles.checkbox}>
-                    <input type="checkbox" value="checkall" />
+                    <input type='checkbox' value='checkall' />
                     <p>Check All</p>
                   </div>
                   <div className={styles.image}>
-                    <img src={
-                      require('../../assets/images/icon_svg/delete_black_48dp.svg').default
-                    } alt="trash" />
+                    <img
+                      src={
+                        require('../../assets/images/icon_svg/delete_black_48dp.svg')
+                          .default
+                      }
+                      alt='trash'
+                    />
                   </div>
                 </div>
-                <div className={styles.cart_list}>
-                    <div className={styles.webinar_list}>
-                      <div className={styles.webinar_image}>
-                        <input type="checkbox" />
-                        <img src={
-                          require('../../assets/images/poster_webinar/poster-supply-chains.png').default
-                        } alt="poster" />
-                      </div>
-                      <div className={styles.webinar_information}>
-                        <div className={styles.information_left}>
-                          <h3>Saham, Reksa Dana, atau Crypto? Apa bedanya?</h3>
-                          <p>Robert Sinatra</p>
-                        </div>
-                        <div className={styles.information_right}>
-                          <h1>Rp. 150.000,-</h1>
-                          <div className={styles.image}>
-                            <img src={
-                              require('../../assets/images/icon_svg/delete_black_48dp.svg').default
-                            } alt="trash" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={styles.webinar_list}>
-                      <div className={styles.webinar_image}>
-                        <input type="checkbox" />
-                        <img src={
-                          require('../../assets/images/poster_webinar/poster-supply-chains.png').default
-                        } alt="poster" />
-                      </div>
-                      <div className={styles.webinar_information}>
-                        <div className={styles.information_left}>
-                          <h3>Saham, Reksa Dana, atau Crypto? Apa bedanya?</h3>
-                          <p>Robert Sinatra</p>
-                        </div>
-                        <div className={styles.information_right}>
-                          <h1>Rp. 150.000,-</h1>
-                          <div className={styles.image}>
-                            <img src={
-                              require('../../assets/images/icon_svg/delete_black_48dp.svg').default
-                            } alt="trash" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={styles.webinar_list}>
-                      <div className={styles.webinar_image}>
-                        <input type="checkbox" />
-                        <img src={
-                          require('../../assets/images/poster_webinar/poster-supply-chains.png').default
-                        } alt="poster" />
-                      </div>
-                      <div className={styles.webinar_information}>
-                        <div className={styles.information_left}>
-                          <h3>Saham, Reksa Dana, atau Crypto? Apa bedanya?</h3>
-                          <p>Robert Sinatra</p>
-                        </div>
-                        <div className={styles.information_right}>
-                          <h1>Rp. 150.000,-</h1>
-                          <div className={styles.image}>
-                            <img src={
-                              require('../../assets/images/icon_svg/delete_black_48dp.svg').default
-                            } alt="trash" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={styles.webinar_list}>
-                      <div className={styles.webinar_image}>
-                        <input type="checkbox" />
-                        <img src={
-                          require('../../assets/images/poster_webinar/poster-supply-chains.png').default
-                        } alt="poster" />
-                      </div>
-                      <div className={styles.webinar_information}>
-                        <div className={styles.information_left}>
-                          <h3>Saham, Reksa Dana, atau Crypto? Apa bedanya?</h3>
-                          <p>Robert Sinatra</p>
-                        </div>
-                        <div className={styles.information_right}>
-                          <h1>Rp. 150.000,-</h1>
-                          <div className={styles.image}>
-                            <img src={
-                              require('../../assets/images/icon_svg/delete_black_48dp.svg').default
-                            } alt="trash" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={styles.webinar_list}>
-                      <div className={styles.webinar_image}>
-                        <input type="checkbox" />
-                        <img src={
-                          require('../../assets/images/poster_webinar/poster-supply-chains.png').default
-                        } alt="poster" />
-                      </div>
-                      <div className={styles.webinar_information}>
-                        <div className={styles.information_left}>
-                          <h3>Saham, Reksa Dana, atau Crypto? Apa bedanya?</h3>
-                          <p>Robert Sinatra</p>
-                        </div>
-                        <div className={styles.information_right}>
-                          <h1>Rp. 150.000,-</h1>
-                          <div className={styles.image}>
-                            <img src={
-                              require('../../assets/images/icon_svg/delete_black_48dp.svg').default
-                            } alt="trash" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={styles.webinar_list}>
-                      <div className={styles.webinar_image}>
-                        <input type="checkbox" />
-                        <img src={
-                          require('../../assets/images/poster_webinar/poster-supply-chains.png').default
-                        } alt="poster" />
-                      </div>
-                      <div className={styles.webinar_information}>
-                        <div className={styles.information_left}>
-                          <h3>Saham, Reksa Dana, atau Crypto? Apa bedanya?</h3>
-                          <p>Robert Sinatra</p>
-                        </div>
-                        <div className={styles.information_right}>
-                          <h1>Rp. 150.000,-</h1>
-                          <div className={styles.image}>
-                            <img src={
-                              require('../../assets/images/icon_svg/delete_black_48dp.svg').default
-                            } alt="trash" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={styles.webinar_list}>
-                      <div className={styles.webinar_image}>
-                        <input type="checkbox" />
-                        <img src={
-                          require('../../assets/images/poster_webinar/poster-supply-chains.png').default
-                        } alt="poster" />
-                      </div>
-                      <div className={styles.webinar_information}>
-                        <div className={styles.information_left}>
-                          <h3>Saham, Reksa Dana, atau Crypto? Apa bedanya?</h3>
-                          <p>Robert Sinatra</p>
-                        </div>
-                        <div className={styles.information_right}>
-                          <h1>Rp. 150.000,-</h1>
-                          <div className={styles.image}>
-                            <img src={
-                              require('../../assets/images/icon_svg/delete_black_48dp.svg').default
-                            } alt="trash" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </div>
+                <div className={styles.cart_list}>{webinarList}</div>
               </div>
               <div className={styles.cart_right}>
                 <Summary />
-                  {/* <div className={styles.box_price_information}>
+                {/* <div className={styles.box_price_information}>
                     <h1>Summary</h1>
                     <div className={styles.total}>
                       <p>Subtotal</p>
@@ -226,7 +86,7 @@ const Cart = () => {
                       <button>Check Out</button>
                     </div>
                   </div> */}
-                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -16,12 +16,7 @@ const Webinar = () => {
       <div className='webinar-slider-content-wrapper'>
         <div className='webinar-slider-data-wrapper'>
           <h2 className='slider-webinar-title'>{topWebinar.title}</h2>
-          <span className='slider-webinar-price'>
-            {Intl.NumberFormat('en-ID', {
-              style: 'currency',
-              currency: 'IDR',
-            }).format(topWebinar.price)}
-          </span>
+          <span className='slider-webinar-price'>{topWebinar.price}</span>
           <div className='slider-webinar-details'>
             <div className='details-column'>
               <div className='details-row date'>

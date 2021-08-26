@@ -38,8 +38,12 @@
   .upcoming-webinar-wrapper {
     width: 50%;
     margin-left: 3rem;
-    overflow: hidden auto;
+    overflow: hidden;
 
+    .upcoming-webinar {
+      overflow: hidden auto;
+      height: 100%;
+    }
     .webinar-wrapper {
       margin-left: 0;
     }

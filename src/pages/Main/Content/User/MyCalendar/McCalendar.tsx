@@ -22,7 +22,7 @@ const MyCalendar = () => {
 
       <div className='upcoming-webinar-wrapper'>
         <h3>Upcoming Webinar</h3>
-        <div>{WebinarList}</div>
+        <div className='upcoming-webinar'>{WebinarList}</div>
       </div>
     </div>
   );
