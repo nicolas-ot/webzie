@@ -104,9 +104,8 @@ $left-margin: 1.2em;
   flex-direction: row;
   flex-shrink: 0;
 
-  a {
-    text-decoration: none;
-    color: variables.$light-purple;
+  span {
+    white-space: nowrap;
   }
 }
 

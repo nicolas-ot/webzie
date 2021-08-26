@@ -5,11 +5,7 @@ interface IconProps {
 }
 
 const Icon: React.FC<IconProps> = ({ children }) => {
-  return (
-    <div className={styles.Icon}>
-      <a href='dummy'>{children}</a>
-    </div>
-  );
+  return <div className={styles.Icon}>{children}</div>;
 };
 
 export default Icon;
