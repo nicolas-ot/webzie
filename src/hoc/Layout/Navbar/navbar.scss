@@ -27,6 +27,10 @@ $left-margin: 1.2em;
   padding: 15px 3.65em;
   margin-bottom: 2.3em;
 
+  a {
+    text-decoration: none;
+  }
+
   > * {
     color: variables.$light-purple;
   }

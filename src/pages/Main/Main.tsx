@@ -14,15 +14,10 @@ const Main = () => {
     setActivePage('My Calendar');
   }, [mode]);
   return (
-    <Layout>
-      <div className='main-page-main-content'>
-        <Sidebar
-          activePage={activePage}
-          setActivePage={setActivePage}
-        ></Sidebar>
-        <Content activePage={activePage} />
-      </div>
-    </Layout>
+    <div className='main-page-main-content'>
+      <Sidebar activePage={activePage} setActivePage={setActivePage}></Sidebar>
+      <Content activePage={activePage} />
+    </div>
   );
 };
 

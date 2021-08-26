@@ -6,23 +6,33 @@ import Main from './pages/Main/Main';
 import { Provider } from 'react-redux';
 import { store } from './state';
 import Cart from './pages/Cart/Cart';
+import Layout from './hoc/Layout/Layout';
+import WaitingPayment from './pages/WaitingPayment/WaitingPayment';
 
 function App() {
   return (
     <Provider store={store}>
       <HashRouter basename={'/'}>
         <div className='App'>
-          <Switch>
-            <Route exact path='/'>
-              <Main />
-            </Route>
-            <Route path='/login'>
-              <Auth />
-            </Route>
-            <Route path='/cart'>
-              <Cart />
-            </Route>
-          </Switch>
+          <Layout>
+            <Switch>
+              <Route exact path='/'>
+                <Main />
+              </Route>
+              <Route path='/cart'>
+                <Cart />
+              </Route>
+            </Switch>
+            <Switch>
+              <Route path='/login'>
+                <Auth />
+              </Route>
+
+              <Route path='/waiting-for-payment'>
+                <WaitingPayment />
+              </Route>
+            </Switch>
+          </Layout>
           {/* {react router: Landing, Main, SignIn/Up} */}
         </div>
       </HashRouter>

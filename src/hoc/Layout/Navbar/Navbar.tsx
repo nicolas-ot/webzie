@@ -6,7 +6,7 @@ import SearchBar from '../../../elements/SearchBar/SearchBar';
 import variables from '../../../utilities/_variables.module.scss';
 import { useActions } from '../../../hooks/use-actions';
 import { useTypedSelector } from '../../../hooks/use-typed-selector';
-import { Redirect } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
 
 const Navbar = () => {
@@ -30,8 +30,9 @@ const Navbar = () => {
         <div className='home-categories-selection'>Selection</div>
       </div>
       <SearchBar />
-
-      <div className='link-to-home'>Home</div>
+      <Link to='/'>
+        <div className='link-to-home'>Home</div>
+      </Link>
       <div className='change-mode-button'>
         {mode === 'user' ? (
           <Button
