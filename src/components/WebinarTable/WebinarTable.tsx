@@ -26,15 +26,18 @@ const WebinarTable: React.FC<WebinarTableProps> = ({ myWebinars }) => {
       <SearchBar withResult={false} />
       <div className='webinar-table-overflow'>
         <div className='webinar-table-information-wrapper'>
-          <div className='table-header row'>
-            <h6 className='column name'>Name</h6>
-            <h6 className='column'>Date</h6>
-            <h6 className='column'>Time</h6>
-            <h6 className='column'>Category</h6>
-            <h6 className='column'>Host</h6>
-            {myWebinars && <h6 className='column'>Status</h6>}
-          </div>
-          {webinarDetailsComponent}
+          <thead>
+            <div className='table-header row'>
+              <h6 className='column name'>Name</h6>
+              <h6 className='column'>Date</h6>
+              <h6 className='column'>Time</h6>
+              <h6 className='column'>Category</h6>
+              <h6 className='column'>Host</h6>
+              {myWebinars && <h6 className='column'>Status</h6>}
+              <h6 className='column button'>Button</h6>
+            </div>
+          </thead>
+          <tbody>{webinarDetailsComponent}</tbody>
         </div>
       </div>
     </div>
