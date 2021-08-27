@@ -23,16 +23,24 @@ const Navbar = () => {
         ></img>
         <span>Webzie</span>
       </div>
-      <div className='home-categories-wrapper'>
-        <button>
-          <span>Categories</span>
-        </button>
-        <div className='home-categories-selection'>Selection</div>
-      </div>
-      <SearchBar />
+      {mode === 'host' && <div style={{ width: '100%' }}></div>}
+      {mode === 'user' && (
+        <div className='home-categories-wrapper'>
+          <button>
+            <span>Categories</span>
+          </button>
+          <div className='home-categories-selection'>Selection</div>
+        </div>
+      )}
+      {mode === 'user' && <SearchBar />}
       <Link to='/'>
         <div className='link-to-home'>Home</div>
       </Link>
+      {mode === 'host' && (
+        <Link to='/'>
+          <div className='return-to-webzie-navbar'>Return to Webzie</div>
+        </Link>
+      )}
       <div className='change-mode-button'>
         {mode === 'user' ? (
           <Button

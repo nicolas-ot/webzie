@@ -4,6 +4,7 @@ import categories from '../../../../../../data/static/category.js';
 
 import Slider from '../../../../../../elements/Slider/Slider';
 import Category from './Category/Category';
+import image from '../../../../../../assets/images/categories/design.jpg';
 
 const Categories = () => {
   const categoriesComponent = categories.map((category) => (

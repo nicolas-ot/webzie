@@ -81,7 +81,12 @@ $left-margin: 1.2em;
 }
 
 .link-to-home {
-  margin: 0 2em 0 2em;
+  margin: 0 2em;
+}
+
+.return-to-webzie-navbar {
+  white-space: nowrap;
+  margin-right: 2em;
 }
 
 .change-mode-button {

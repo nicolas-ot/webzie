@@ -1,14 +1,23 @@
 import styles from './Summary.module.scss';
 import { currencyFormatter } from '../../../utilities/utility';
+import { useRef } from 'react';
 
 interface SummaryProps {
   onClick: () => void;
   subTotal: number;
+  serviceFee: number;
+  discount: number;
+  setDiscount: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const serviceFee = 25000;
-
-const Summary: React.FC<SummaryProps> = ({ onClick, subTotal }) => {
+const Summary: React.FC<SummaryProps> = ({
+  onClick,
+  subTotal,
+  serviceFee,
+  discount,
+  setDiscount,
+}) => {
+  const voucherRef = useRef<HTMLInputElement>(null);
   return (
     <div className={styles.SummaryWrapper}>
       <div className={styles.total}>
@@ -28,28 +37,29 @@ const Summary: React.FC<SummaryProps> = ({ onClick, subTotal }) => {
           <i>Discount</i>
         </p>
         <div className={styles.nominal_discount}>
-          <p>
-            <i>Rp</i>
-          </p>
-          <p>
-            <i>0,-</i>
-          </p>
+          <p>{currencyFormatter.format(discount)}</p>
         </div>
       </div>
       <div className={styles.code}>
         <p>
           <b>First Name</b>
         </p>
-        <input type='text' placeholder='Enter voucher code' />
-        <div className={styles.box_button}>
-          <button>Apply</button>
-        </div>
+        <form onSubmit={() => setDiscount(Number(voucherRef.current?.value))}>
+          <input
+            type='text'
+            placeholder='Enter voucher code'
+            ref={voucherRef}
+          />
+          <div className={styles.box_button}>
+            <button>apply</button>
+          </div>
+        </form>
       </div>
       <hr />
       <div className={styles.total}>
         <p>Total</p>
         <div className={styles.nominal}>
-          <p>{currencyFormatter.format(subTotal + serviceFee)}</p>
+          <p>{currencyFormatter.format(subTotal + serviceFee - discount)}</p>
         </div>
       </div>
       <div className={styles.button_checkout}>

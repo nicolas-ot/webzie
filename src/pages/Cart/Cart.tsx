@@ -6,8 +6,10 @@ import Summary from '../Cart/Summary/Summary';
 import Webinar from './Webinar/Webinar';
 import Payment from './Payment/Payment';
 
+const serviceFee = 25000;
 const Cart = () => {
   const [payment, setPayment] = useState(false);
+  const [discount, setDiscount] = useState(0);
 
   let subTotal = 0;
   const webinarList = webinars.map((webinar) => {
@@ -55,9 +57,14 @@ const Cart = () => {
                   <Summary
                     subTotal={subTotal}
                     onClick={() => setPayment(true)}
+                    serviceFee={serviceFee}
+                    discount={discount}
+                    setDiscount={setDiscount}
                   />
                 )}
-                {payment && <Payment />}
+                {payment && (
+                  <Payment total={subTotal + serviceFee - discount} />
+                )}
               </div>
             </div>
           </div>
