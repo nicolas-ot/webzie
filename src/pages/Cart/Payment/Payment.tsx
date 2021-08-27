@@ -5,18 +5,17 @@ import PaymentMethodData from '../../../data/static/paymentMethod';
 
 import PaymentMethod from '../PaymentMethod/PaymentMethod';
 
-
 interface PaymentProps {
   total: number;
 }
 
-const PaymentMethodList = PaymentMethodData.map((paymentMethod) => {
-  return (
-    <PaymentMethod 
-      title = {paymentMethod.title}
-    />
-  );
-});
+// const PaymentMethodList = PaymentMethodData.map((paymentMethod) => {
+//   return (
+//     <PaymentMethod
+//       title = {paymentMethod.title}
+//     />
+//   );
+// });
 
 const Payment: React.FC<PaymentProps> = ({ total }) => {
   return (
@@ -33,7 +32,16 @@ const Payment: React.FC<PaymentProps> = ({ total }) => {
         </div>
         <hr />
         <p className={styles.PayWith}>Pay with</p>
-        {PaymentMethodList}
+        <PaymentMethod title='bank transfer'>
+          {/* ini bagian dropdownnya (yg kyk XXXXXXXXX
+                                          salin nomor
+                                          
+                                          
+                                    1. the maximum payment deadline blablabla
+                                          ) */}
+          {/* ini di sub-componentnya jadi props children */}
+          dropdown
+        </PaymentMethod>
         <div className={styles.button}>
           <Link to={`/waiting-for-payment`}>
             <button>Pay</button>
