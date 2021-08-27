@@ -1,0 +1,18 @@
+.BoxPayment{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+    border-bottom: 1px solid #bcbcbc;
+}
+
+.BoxPayment p{
+    font-size: 1.5em !important;
+    color:#5e5de4;
+    font-weight: bold;
+}
+
+.BoxPayment i:hover{
+    cursor: pointer;
+}

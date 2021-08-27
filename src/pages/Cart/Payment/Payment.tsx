@@ -1,10 +1,23 @@
 import { Link } from 'react-router-dom';
 import styles from './payment.module.scss';
 import { currencyFormatter } from '../../../utilities/utility';
+import PaymentMethodData from '../../../data/static/paymentMethod';
+
+import PaymentMethod from '../PaymentMethod/PaymentMethod';
+
 
 interface PaymentProps {
   total: number;
 }
+
+const PaymentMethodList = PaymentMethodData.map((paymentMethod) => {
+  return (
+    <PaymentMethod 
+      title = {paymentMethod.title}
+    />
+  );
+});
+
 const Payment: React.FC<PaymentProps> = ({ total }) => {
   return (
     <div>
@@ -20,58 +33,7 @@ const Payment: React.FC<PaymentProps> = ({ total }) => {
         </div>
         <hr />
         <p className={styles.PayWith}>Pay with</p>
-        <div className={styles.BoxPayment}>
-          <p>Bank Transfer</p>
-          <i>
-            <img
-              src={
-                require('../../../assets/images/icon_svg/arrow_drop_down.svg')
-                  .default
-              }
-              alt='arrow'
-              width='100%'
-            />
-          </i>
-        </div>
-        <div className={styles.BoxPayment}>
-          <p>Virtual Account</p>
-          <i>
-            <img
-              src={
-                require('../../../assets/images/icon_svg/arrow_drop_down.svg')
-                  .default
-              }
-              alt='arrow'
-              width='100%'
-            />
-          </i>
-        </div>
-        <div className={styles.BoxPayment}>
-          <p>E-Wallet</p>
-          <i>
-            <img
-              src={
-                require('../../../assets/images/icon_svg/arrow_drop_down.svg')
-                  .default
-              }
-              alt='arrow'
-              width='100%'
-            />
-          </i>
-        </div>
-        <div className={styles.BoxPayment}>
-          <p>Credit Cards</p>
-          <i>
-            <img
-              src={
-                require('../../../assets/images/icon_svg/arrow_drop_down.svg')
-                  .default
-              }
-              alt='arrow'
-              width='100%'
-            />
-          </i>
-        </div>
+        {PaymentMethodList}
         <div className={styles.button}>
           <Link to={`/waiting-for-payment`}>
             <button>Pay</button>
