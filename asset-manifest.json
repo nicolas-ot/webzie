@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/webzie/static/css/main.2699c062.chunk.css",
-    "main.js": "/webzie/static/js/main.d86edd3e.chunk.js",
-    "main.js.map": "/webzie/static/js/main.d86edd3e.chunk.js.map",
-    "runtime-main.js": "/webzie/static/js/runtime-main.b37d8877.js",
-    "runtime-main.js.map": "/webzie/static/js/runtime-main.b37d8877.js.map",
+    "main.css": "/webzie/static/css/main.622c3232.chunk.css",
+    "main.js": "/webzie/static/js/main.93b5dfc6.chunk.js",
+    "main.js.map": "/webzie/static/js/main.93b5dfc6.chunk.js.map",
+    "runtime-main.js": "/webzie/static/js/runtime-main.5fa2a5b5.js",
+    "runtime-main.js.map": "/webzie/static/js/runtime-main.5fa2a5b5.js.map",
     "static/css/2.8517ce70.chunk.css": "/webzie/static/css/2.8517ce70.chunk.css",
-    "static/js/2.e512c329.chunk.js": "/webzie/static/js/2.e512c329.chunk.js",
-    "static/js/2.e512c329.chunk.js.map": "/webzie/static/js/2.e512c329.chunk.js.map",
-    "static/js/3.bdfd8c42.chunk.js": "/webzie/static/js/3.bdfd8c42.chunk.js",
-    "static/js/3.bdfd8c42.chunk.js.map": "/webzie/static/js/3.bdfd8c42.chunk.js.map",
+    "static/js/2.ea871b8b.chunk.js": "/webzie/static/js/2.ea871b8b.chunk.js",
+    "static/js/2.ea871b8b.chunk.js.map": "/webzie/static/js/2.ea871b8b.chunk.js.map",
+    "static/js/3.a68962f9.chunk.js": "/webzie/static/js/3.a68962f9.chunk.js",
+    "static/js/3.a68962f9.chunk.js.map": "/webzie/static/js/3.a68962f9.chunk.js.map",
     "index.html": "/webzie/index.html",
     "static/css/2.8517ce70.chunk.css.map": "/webzie/static/css/2.8517ce70.chunk.css.map",
-    "static/css/main.2699c062.chunk.css.map": "/webzie/static/css/main.2699c062.chunk.css.map",
-    "static/js/2.e512c329.chunk.js.LICENSE.txt": "/webzie/static/js/2.e512c329.chunk.js.LICENSE.txt",
+    "static/css/main.622c3232.chunk.css.map": "/webzie/static/css/main.622c3232.chunk.css.map",
+    "static/js/2.ea871b8b.chunk.js.LICENSE.txt": "/webzie/static/js/2.ea871b8b.chunk.js.LICENSE.txt",
     "static/media/Asset 1.jpg": "/webzie/static/media/Asset 1.d4ef2596.jpg",
     "static/media/Asset.jpg": "/webzie/static/media/Asset.501bdd16.jpg",
     "static/media/Mask Group 417.png": "/webzie/static/media/Mask Group 417.163f1148.png",
@@ -21,6 +21,7 @@
     "static/media/architect.f34b8a2b.jpg": "/webzie/static/media/architect.f34b8a2b.jpg",
     "static/media/slider.scss": "/webzie/static/media/arrow_drop_down.44857230.svg",
     "static/media/business.8cd3824a.jpg": "/webzie/static/media/business.8cd3824a.jpg",
+    "static/media/delete_black_48dp.svg": "/webzie/static/media/delete_black_48dp.2c813c19.svg",
     "static/media/design.73fc0b9f.jpg": "/webzie/static/media/design.73fc0b9f.jpg",
     "static/media/fashion.564a875b.jpg": "/webzie/static/media/fashion.564a875b.jpg",
     "static/media/film-photography.2e54a2f4.jpg": "/webzie/static/media/film-photography.2e54a2f4.jpg",
@@ -44,10 +45,10 @@
     "static/media/technology-innovation.1b56d540.jpg": "/webzie/static/media/technology-innovation.1b56d540.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b37d8877.js",
+    "static/js/runtime-main.5fa2a5b5.js",
     "static/css/2.8517ce70.chunk.css",
-    "static/js/2.e512c329.chunk.js",
-    "static/css/main.2699c062.chunk.css",
-    "static/js/main.d86edd3e.chunk.js"
+    "static/js/2.ea871b8b.chunk.js",
+    "static/css/main.622c3232.chunk.css",
+    "static/js/main.93b5dfc6.chunk.js"
   ]
 }
