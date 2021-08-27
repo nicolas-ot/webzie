@@ -1,0 +1,69 @@
+.SummaryWrapper h1 {
+    font-size: 3em;
+    color: #5e5de4;
+    font-weight: bold;
+  }
+  
+  .SummaryWrapper p {
+    font-size: 2em;
+  }
+
+.SummaryWrapper .total {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .SummaryWrapper .total .nominal {
+    width: 44%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .salin{
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  .salin a{
+      width: 15%;   
+  }
+
+  .PayWith{
+      margin: 10px 0px;
+      font-weight: bold;
+      font-size: 1.5em !important;
+  }
+
+  .BoxPayment{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 0px;
+      border-bottom: 1px solid #bcbcbc;
+  }
+
+  .BoxPayment p{
+      font-size: 1.5em !important;
+      color:#5e5de4;
+      font-weight: bold;
+  }
+
+  .button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .button button{
+      padding:10px 50px;
+      border:none;
+      border-radius: 50px;
+      margin-top: 30px;
+      font-size: 1.5em;
+      text-decoration: none !important;
+      background-color: #5e5de4;
+      color:white !important;
+  }

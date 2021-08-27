@@ -1,5 +1,5 @@
 .TopicWaiting{
-    font-size: 4em;
+    font-size: 6em;
     margin:0;
     color:#5e5de4;
 }
@@ -19,39 +19,9 @@
 
 .PaymentBox > p{
     margin-top: 10px;
-    font-size: 2.5em;
-    letter-spacing: 0.05em;
-}
-
-.Timer{
-    margin-top: 20px;
-    display: flex;
-}
-
-.Day{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding:20px;
-}
-
-.Timer > p{
-    font-size: 6em;
-    padding:20px 0px;
-    font-weight: bold;
-    color:green;
-}
-
-.Day p:first-child{
-    font-size: 6em;
-    color:green;
-    font-weight: bold;
-}
-
-.Day p:last-child{
+    text-align: center;
     font-size: 3em;
-    font-weight: bold;
+    padding:40px 0px;
 }
 
 ol{
@@ -72,11 +42,11 @@ ol li{
   
   .button button {
     margin-top: 40px;
-    padding: 15px 60px;
+    padding: 8px 35px;
     border-radius: 50px;
     border: none;
-    font-size: 2.3em;
-    color: white;
+    font-size: 2.5em;
+    color: rgb(180, 179, 179);
     background-color: #5e5de4;
   }
   
