@@ -125,7 +125,7 @@
     font-weight: bold;
   }
 
-  input{
+  .GroupForm input{
     padding:10px 0px;
     width: 100%;
     margin-top: 5px;
@@ -135,9 +135,19 @@
     font-size: 1.5em;
  }
 
- input:focus{
+ .GroupForm input:focus{
    border-bottom: 2px solid #5e5de4;
  }
+
+ .GroupForm2 input{
+  padding:10px 0px;
+  width: 100%;
+  margin-top: 5px;
+  border:none;
+  outline: none;
+  border-bottom:2px solid #bcbcbc;
+  font-size: 1.5em;
+}
 
 .GroupForm2{
   width: 100%;
