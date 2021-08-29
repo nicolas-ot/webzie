@@ -10,27 +10,24 @@ const PaymentMethod: React.FC<PaymentMethodProps> = ({ title, children }) => {
   return (
     <>
       <div className={styles.BoxPayment}>
-        <p>{title}</p>
-        <i>
-          <img
-            src={
-              require('../../../assets/images/icon_svg/arrow_drop_down.svg')
-                .default
-            }
-            alt='arrow'
-            width='100%'
-          />
-        </i>
-      </div>
-      <div>
-        {/* ini bagian dropdownnya (yg kyk XXXXXXXXX
-                                          salin nomor
-                                          
-                                          
-                                    1. the maximum payment deadline blablabla
-                                          ) */}
+        <div className={styles.BoxContent}>
+          <p>{title}</p>
+          <i>
+            <img
+              src={
+                require('../../../assets/images/icon_svg/arrow_drop_down.svg')
+                  .default
+              }
+              alt='arrow'
+              width='100%'
+            />
+          </i>
+        </div>
+        <div>
         {children}
+        </div>
       </div>
+     
     </>
   );
 };
