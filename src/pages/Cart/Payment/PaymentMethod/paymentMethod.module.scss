@@ -1,0 +1,35 @@
+.BoxPayment {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px 0px;
+  border-bottom: 1px solid #bcbcbc;
+}
+
+.BoxContent {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.BoxContent p {
+  font-size: 1.5em !important;
+  color: #5e5de4;
+  font-weight: bold;
+}
+
+.BoxPayment i:hover {
+  cursor: pointer;
+}
+
+.Dropdown {
+  max-height: 0;
+  transition: 150ms cubic-bezier(0, 0, 0.38, 0.9);
+  overflow: hidden;
+  //   transform-origin: top;
+}
+
+.Open {
+  max-height: 1200px;
+}
