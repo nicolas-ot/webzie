@@ -11,6 +11,7 @@ $white: #fff;
   width: 70%;
   margin: 0 auto;
   transition: width 1s ease-in;
+  color: black;
 }
 
 .progress-track {
@@ -94,16 +95,8 @@ $white: #fff;
   }
 
   &.is-not-complete {
-    color: $green;
+    color: $blue;
 
-    // Step's circle in complete state
-    &:before {
-      font-family: 'Font Awesome 5 Free';
-      font-size: 10px;
-      color: $white;
-      background: $green;
-      border: 4px solid transparent;
-    }
     &:after {
       background: $blue;
       animation: prevStep 1s;

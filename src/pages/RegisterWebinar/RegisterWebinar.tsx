@@ -31,10 +31,12 @@ const RegisterWebinar = () => {
 
   const handleNext = () => {
     setStep((prevStep) => prevStep + 1);
+    setForward(true);
   };
 
   const handleBack = () => {
     setStep((prevStep) => prevStep - 1);
+    setForward(false);
   };
 
   switch (step) {
@@ -63,15 +65,56 @@ const RegisterWebinar = () => {
       );
       break;
   }
+
+  let form;
+
+  switch (step) {
+    case 1:
+      form = (
+        <div>
+          <div>INFORMATION</div>
+        </div>
+      );
+      break;
+    case 2:
+      form = (
+        <div>
+          <div>DESCRIPTION</div>
+        </div>
+      );
+      break;
+    case 3:
+      form = (
+        <div>
+          <div>POSTER</div>
+        </div>
+      );
+      break;
+    case 4:
+      form = (
+        <div>
+          <div>E-CERTIFICATE</div>
+        </div>
+      );
+      break;
+    case 5:
+      form = (
+        <div>
+          <div>PUBLISHING</div>
+        </div>
+      );
+      break;
+  }
+
   return (
     <div>
-      <ProgressBar step={step} />
+      <ProgressBar step={step} forward={forward} />
       <div className={styles.RegisterWebinar}>
         <div className={styles.ImageContainer}>
           <img src={image} alt='register-webinar' />
         </div>
         <div>
-          {/* form */}
+          {form}
           <div className={styles.ButtonContainer}>{buttons}</div>
         </div>
       </div>
