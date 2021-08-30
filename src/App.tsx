@@ -31,7 +31,7 @@ function App() {
               <Route path='/waiting-for-payment'>
                 <WaitingPayment />
               </Route>
-              <Route path='/'>
+              <Route exact path='/'>
                 <RegisterWebinar />
               </Route>
             </Switch>
