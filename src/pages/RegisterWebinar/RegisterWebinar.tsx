@@ -65,7 +65,7 @@ const RegisterWebinar = () => {
       );
       break;
   }
-
+  // Edit swtich statement buat bikin formnya
   let form;
 
   switch (step) {
@@ -97,7 +97,7 @@ const RegisterWebinar = () => {
         </div>
       );
       break;
-    case 5:
+    default:
       form = (
         <div>
           <div>PUBLISHING</div>
