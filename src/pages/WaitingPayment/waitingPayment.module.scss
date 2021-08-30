@@ -8,8 +8,9 @@
     width: 100%;
     padding:50px 300px;
 }
+
 .PaymentBox{
-    padding:70px 250px;
+    padding:70px 160px;
     box-shadow: 0px 0px 5px 0px #bcbcbc;
     display: flex;
     flex-direction: column;
@@ -84,3 +85,83 @@ ol li{
     cursor: pointer;
   }
   
+
+@media (max-width : 1280px){
+    .ContainerPayment{
+        padding:50px 200px;
+    }
+}
+
+@media (max-width : 1024px){
+    .ContainerPayment{
+        padding:50px 100px;
+    }
+}
+
+@media (max-width : 990px){
+    .PaymentBox{
+        padding:70px 100px; 
+    }
+}
+
+@media (max-width : 769px){
+    .ContainerPayment{
+        padding:50px 50px;
+    }
+
+    .PaymentBox{
+        padding:70px 70px;
+    }
+}
+
+@media (max-width : 578px){
+    .ContainerPayment{
+        padding:30px 30px;
+    }
+
+    .PaymentBox{
+        padding:40px 20px;
+    }
+    
+    .TopicWaiting{
+        font-size: 3em;
+    }
+
+    .PaymentBox > p{
+        font-size: 1.7em;
+    }
+
+    .Timer{
+        margin-top:10px;
+    }
+
+    .Timer > p{
+        font-size: 4em;
+        padding:13px 0px;
+    }
+
+    .Day{
+        padding:15px;
+    }
+
+    .Day p:first-child{
+        font-size: 4em;
+    }
+
+    .Day p:last-child{
+        font-size: 1.5em;
+    }
+
+    ol{
+        padding-left: 20px;
+    }
+
+    ol li{
+        font-size: 1.3em;
+    }
+
+    .button button{
+        font-size: 1.3em;
+        margin-top:10px;
+    }
+}
