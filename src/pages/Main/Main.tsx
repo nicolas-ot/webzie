@@ -1,6 +1,5 @@
 import './main.scss';
 
-import Layout from '../../hoc/Layout/Layout';
 import Content from './Content/Content';
 import Sidebar from './Sidebar/Sidebar';
 import { useEffect, useState } from 'react';

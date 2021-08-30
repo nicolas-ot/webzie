@@ -8,6 +8,7 @@ import { store } from './state';
 import Cart from './pages/Cart/Cart';
 import Layout from './hoc/Layout/Layout';
 import WaitingPayment from './pages/WaitingPayment/WaitingPayment';
+import RegisterWebinar from './pages/RegisterWebinar/RegisterWebinar';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <div className='App'>
           <Layout>
             <Switch>
-              <Route exact path='/'>
+              <Route exact path='/asd'>
                 <Main />
               </Route>
               <Route path='/cart'>
@@ -27,9 +28,11 @@ function App() {
               <Route path='/login'>
                 <Auth />
               </Route>
-
               <Route path='/waiting-for-payment'>
                 <WaitingPayment />
+              </Route>
+              <Route path='/'>
+                <RegisterWebinar />
               </Route>
             </Switch>
           </Layout>

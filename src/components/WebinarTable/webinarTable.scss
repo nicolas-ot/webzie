@@ -1,5 +1,9 @@
 @use '../../utilities/variables.module';
 
+.webinar-table-sort-wrapper {
+  display: flex;
+}
+
 .webinar-table-wrapper {
   border-spacing: 0 15px;
 

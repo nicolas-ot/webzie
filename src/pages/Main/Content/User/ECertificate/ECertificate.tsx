@@ -11,14 +11,7 @@ const ECertificate = () => {
   );
   return (
     <div className='e-certificate-main-wrapper'>
-      <h3>E-Certificate</h3>
-      <div className='e-certificate-content-wrapper'>
-        <Sort
-          active={sort}
-          onClick={(sort: SortingType[keyof SortingType]) => setSort(sort)}
-        />
-        <WebinarTable />
-      </div>
+      <WebinarTable title='E-Certificate' />
     </div>
   );
 };
