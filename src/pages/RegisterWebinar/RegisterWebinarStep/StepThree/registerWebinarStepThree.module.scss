@@ -1,0 +1,155 @@
+  .BoxInformation{
+    padding: 30px 30px;
+    min-width: 60rem;
+  }
+  
+  .BoxInformation > p:first-child{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .BoxInformation label{
+    font-weight: bold;
+  }
+  
+  .GroupForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  .GroupForm2{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .GroupFormRight{
+    padding-left: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .GroupForm2 input{
+    width: 100%;
+  }
+  
+  .ImageForm{
+    margin: 10px 0px;
+    width: 100%;
+    min-height: 25rem;
+    border:1px solid #bcbcbc;
+    border-radius: 10px;
+  }
+  
+  .GroupFormLeft{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .GroupFormLeft label{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .ButtonImage{
+    width: 95%;
+    padding:10px 0px !important;
+    border-radius:50px;
+    border:none;
+    font-weight: bold;
+    margin-bottom:15px;
+  }
+  
+  .GroupFormMid{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .hr{
+    height: 40%;
+    background-color:#bcbcbc;
+  }
+
+  .GroupFormMid p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+  }
+
+  .TemplateBox{
+    margin-top: 10px;
+    width: 100%;
+    max-height: 33rem;
+    padding:10px 0px;
+    position: relative;
+  }
+
+  .TemplateBox .Box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+    overflow-y : scroll; 
+  }
+
+  .TemplateBox .Box::-webkit-scrollbar {
+    display: none;
+}
+
+  .RowTemplate{
+    display: flex;
+  }
+
+  .ImageTemplate{
+    width: 50%;
+    padding:5px;
+  }
+
+  .ImageTemplate img{
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .Box .leftBtn, .Box .rightBtn{
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0px 0px 10px 0px #bcbcbc;
+    background-color:white;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .leftBtn{
+    bottom: 0;
+    left: 43%;
+  }
+  
+  .leftBtn p{
+    font-size: 1.8em;
+  }
+  
+  .rightBtn{
+    top: 0;
+    right: 43%;
+    transform:scaleY(-1);
+  }
+  
+  .rightBtn p{
+    font-size: 1.8em;
+  }
