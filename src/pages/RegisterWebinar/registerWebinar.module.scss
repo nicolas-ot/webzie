@@ -77,6 +77,10 @@
   font-size: 1.2em;
 }
 
+.BoxInformation input:focus{
+  border-bottom:2px solid #5e5de4;
+}
+
 .checkbox{
   margin-top: 20px;
   padding-left: 10px;
@@ -119,4 +123,67 @@
   color: #5e5de4 !important;
   font-weight: bold !important;
   border:1px solid !important; 
+}
+
+.InputDescription{
+  width: 100%;
+  min-height: 15rem;
+  font-size: 1.3rem;
+  padding:5px;
+  border:2px solid #bcbcbc !important;
+  margin-top: 5px;
+}
+
+.ImageForm{
+  margin: 10px 0px;
+  width: 100%;
+  min-height: 25rem;
+  border:1px solid #bcbcbc;
+  border-radius: 10px;
+
+}
+
+.GroupFormLeft1{
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+  align-items: center;
+}
+
+.GroupFormLeft1 label{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ButtonImage{
+  width: 95%;
+  padding:10px 0px !important;
+  border-radius:50px;
+  border:none;
+  font-weight: bold;
+  margin-bottom:15px;
+}
+
+.GroupFormMid{
+  width: 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.GroupFormMid hr{
+  height: 49%;
+  background-color:#bcbcbc;
+}
+
+.GroupFormMid > p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top:17px;
+  margin:0;
+  font-size: 1.4em;
 }

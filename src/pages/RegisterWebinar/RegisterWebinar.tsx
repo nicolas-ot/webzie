@@ -129,14 +129,65 @@ const RegisterWebinar = () => {
     case 2:
       form = (
         <div>
-          <div>DESCRIPTION</div>
+          <div className={styles.BoxInformation}>
+            <p>Tell us about your webinar!</p>
+            <div className={styles.GroupForm}>
+              <label htmlFor="">Description</label>
+              <textarea className={styles.InputDescription} placeholder="Describe your webinar"></textarea>
+            </div>
+            <div className={styles.GroupForm}>           
+              <label htmlFor="">Speaker Name</label>
+              <div className={styles.GroupForm2}>
+                <div className={styles.GroupFormLeft}>
+                  <input type="text" placeholder="Webinar speaker 1" />
+                </div>
+                <div className={styles.GroupFormRight}>
+                  <label htmlFor=""></label>
+                  <input type="text" placeholder="Webinar speaker 2" />
+                </div>
+              </div>
+              <div className={styles.GroupForm2}>
+                <div className={styles.GroupFormLeft}>
+                  <input type="text" placeholder="Webinar speaker 3" />
+                </div>
+                <div className={styles.GroupFormRight}>
+                  <label htmlFor=""></label>
+                  <input type="text" placeholder="Webinar speaker 4" />
+                </div>
+              </div>
+              <div className={styles.GroupForm2}>
+                <div className={styles.GroupFormLeft}>
+                  <input type="text" placeholder="Webinar speaker 5" />
+                </div>
+              </div>
+            </div>    
+          </div>
         </div>
       );
       break;
     case 3:
       form = (
         <div>
-          <div>POSTER</div>
+          <div className={styles.BoxInformation}>
+            <p>Make your Webinar Poster!</p>
+            <div className={styles.GroupForm2}>
+              <div className={styles.GroupFormLeft1}>
+                <label>Webinar Poster</label>
+                <div className={styles.ImageForm}></div>
+                <Button className={styles.ButtonImage}>Upload Webinar Poster</Button>
+                <p>For Poster guideline. <a href="#">download here</a></p>
+              </div>
+              <div className={styles.GroupFormMid}>
+                <hr />
+                <p>OR</p>
+                <hr />
+              </div>
+              <div className={styles.GroupFormLeft1}>
+                <label>Poster Template</label>
+                <div className={styles.ImageForm}></div>
+              </div>
+            </div>
+          </div>
         </div>
       );
       break;
