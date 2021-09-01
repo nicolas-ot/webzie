@@ -1,18 +1,13 @@
-  .BoxInformation{
-    padding: 30px 30px;
-    min-width: 60rem;
-  }
-  
-  .BoxInformation > p:first-child{
+  p:first-child{
     font-size: 2.5em;
     font-weight: bold;
     margin-bottom: 20px;
   }
-  
-  .BoxInformation label{
+
+  label{
     font-weight: bold;
   }
-  
+
   .GroupForm{
     width: 100%;
     display: flex;
@@ -118,7 +113,14 @@
 
   .ImageTemplate img{
     width: 100%;
+    height:11rem;
     border-radius: 10px;
+    cursor: pointer;
+    transition: transform .2s;
+  }
+
+  .ImageTemplate img:hover{
+    transform: scale(1.1);
   }
 
   .Box .leftBtn, .Box .rightBtn{

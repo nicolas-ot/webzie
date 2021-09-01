@@ -1,11 +1,10 @@
-import styles from './registerWebinarStepOne.module.scss';
+import styles from './StepOne.module.scss';
 
-const RegisterWebinarStepOne = () =>{
+const StepOne = () =>{
     return(
 
         <>
 
-        <div className={styles.BoxInformation}>
             <p>Tell us about your webinar!</p>
             <div className={styles.GroupForm}>
               <label htmlFor="">Title</label>
@@ -55,11 +54,10 @@ const RegisterWebinarStepOne = () =>{
                 <p>This website is free</p>
               </div>
             </div>
-          </div>
 
         </>
 
     )
 }
 
-export default RegisterWebinarStepOne;
+export default StepOne;

@@ -1,14 +1,13 @@
-import styles from './registerWebinarStepThree.module.scss';
+import styles from './StepThree.module.scss';
 
 import Button from '../../../../elements/Button/Button';
 
 
-const RegisterWebinarStepThree = () =>{
+const StepThree = () =>{
     return(
 
         <>
 
-          <div className={styles.BoxInformation}>
             <p>Make your Webinar Poster!</p>
             <div className={styles.GroupForm2}>
               <div className={styles.GroupFormLeft}>
@@ -98,11 +97,10 @@ const RegisterWebinarStepThree = () =>{
                 </div>
               </div>
             </div>
-          </div>
 
         </>
 
     )
 }
 
-export default RegisterWebinarStepThree;
+export default StepThree;

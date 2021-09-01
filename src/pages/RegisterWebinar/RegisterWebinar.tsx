@@ -1,11 +1,11 @@
 import styles from './registerWebinar.module.scss';
 import image from '../../assets/images/images/register-webinar.png';
 
-import StepOne from './RegisterWebinarStep/StepOne/RegisterWebinarStepOne';
-import StepTwo from './RegisterWebinarStep/StepTwo/RegisterWebinarStepTwo';
-import StepThree from './RegisterWebinarStep/StepThree/RegisterWebinarStepThree';
-import StepFour from './RegisterWebinarStep/StepFour/RegisterWebinarStepFour';
-import StepFive from './RegisterWebinarStep/StepFive/RegisterWebinarStepFive';
+import StepOne from './RegisterWebinarStep/StepOne/StepOne';
+import StepTwo from './RegisterWebinarStep/StepTwo/StepTwo';
+import StepThree from './RegisterWebinarStep/StepThree/StepThree';
+import StepFour from './RegisterWebinarStep/StepFour/StepFour';
+import StepFive from './RegisterWebinarStep/StepFive/StepFive';
 
 import { useState } from 'react';
 import ProgressBar from './ProgressBar/ProgressBar';
@@ -119,8 +119,10 @@ const RegisterWebinar = () => {
         <div className={styles.ImageContainer}>
           <img src={image} alt='register-webinar' />
         </div>
-        <div>
-          {form}
+        <div className={styles.BoxInformation}>
+          <div className={styles.BoxInformationTop}>
+            {form}
+          </div>
           <div className={styles.ButtonContainer}>{buttons}</div>
         </div>
       </div>

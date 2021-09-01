@@ -1,11 +1,10 @@
-import styles from './registerWebinarStepTwo.module.scss';
+import styles from './StepTwo.module.scss';
 
-const RegisterWebinarStepTwo = () =>{
+const StepTwo = () =>{
     return(
 
         <>
 
-          <div className={styles.BoxInformation}>
             <p>Tell us about your webinar!</p>
             <div className={styles.GroupForm}>
               <label htmlFor="">Description</label>
@@ -37,11 +36,10 @@ const RegisterWebinarStepTwo = () =>{
                 </div>
               </div>
             </div>    
-          </div>
 
         </>
 
     )
 }
 
-export default RegisterWebinarStepTwo;
+export default StepTwo;
