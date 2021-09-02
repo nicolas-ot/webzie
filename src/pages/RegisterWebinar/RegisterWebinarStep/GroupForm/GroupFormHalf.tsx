@@ -6,42 +6,53 @@ interface GroupFormHalfProps {
     titleRight : string,
     placeholderLeft : string,
     placeholderRight : string,
-    time : string;
+    type : string;
 }
 
-const GroupFormHalf: React.FC<GroupFormHalfProps> = ({titleLeft,titleRight,placeholderLeft,placeholderRight,time}) => {
+const GroupFormHalf: React.FC<GroupFormHalfProps> = ({titleLeft,titleRight,placeholderLeft,placeholderRight,type}) => {
     let status;
 
-    if(time != ""){
-        status = (
-        <div className={styles.GroupForm2}>
-            <div className={styles.GroupFormLeft}>
-            <label htmlFor="">{titleLeft}</label>
-            <input type="text" placeholder="dd/mm/yy" />
-            </div>
-            <div className={styles.GroupFormRight}>
-            <label htmlFor="">{titleRight}</label>
-            <div className={styles.TimeStartEnd}>
-                <input type="text" placeholder="hh:mm" />
-                <p>-</p>
-                <input type="text" placeholder="hh:mm" />
-            </div>
-            </div>
-        </div>
-        ) 
-    }else{
-        status = (
-            <div className={styles.GroupForm2}>
-              <div className={styles.GroupFormLeft}>
-                <label htmlFor="">{titleLeft}</label>
-                <input type="text" placeholder={placeholderLeft} />
-              </div>
-              <div className={styles.GroupFormRight}>
-                <label htmlFor="">{titleRight}</label>
-                <input type="text" placeholder={placeholderRight} />
-              </div>
-            </div>
-        )
+    switch(type){
+        case "time" :
+            status = (
+                <div className={styles.GroupForm2}>
+                    <div className={styles.GroupFormLeft}>
+                    <label htmlFor="">{titleLeft}</label>
+                    <input type="text" placeholder="dd/mm/yy" />
+                    </div>
+                    <div className={styles.GroupFormRight}>
+                    <label htmlFor="">{titleRight}</label>
+                    <div className={styles.TimeStartEnd}>
+                        <input type="text" placeholder="hh:mm" />
+                        <p>-</p>
+                        <input type="text" placeholder="hh:mm" />
+                    </div>
+                    </div>
+                </div>
+                )
+                break; 
+        case "normal" :
+            status = (
+                <div className={styles.GroupForm2}>
+                <div className={styles.GroupFormLeft}>
+                    <label htmlFor="">{titleLeft}</label>
+                    <input type="text" placeholder={placeholderLeft} />
+                </div>
+                <div className={styles.GroupFormRight}>
+                    <label htmlFor="">{titleRight}</label>
+                    <input type="text" placeholder={placeholderRight} />
+                </div>
+                </div>
+            )
+            break;
+        case "halfNoLabel" :
+            status = (
+                <div className={styles.GroupForm2}>
+                    <div className={styles.GroupFormLeft}>
+                    <input type="text" placeholder={placeholderLeft} />
+                    </div>
+                 </div>
+            )
     }
     return(
         <>

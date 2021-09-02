@@ -1,5 +1,8 @@
 import styles from './StepTwo.module.scss';
 
+import GroupForm from '../GroupForm/GroupFormFull';
+import GroupFormHalf from '../GroupForm/GroupFormHalf';
+
 const StepTwo = () =>{
     return(
       
@@ -11,29 +14,9 @@ const StepTwo = () =>{
             </div>
             <div className={styles.GroupForm}>           
               <label htmlFor="">Speaker Name</label>
-              <div className={styles.GroupForm2}>
-                <div className={styles.GroupFormLeft}>
-                  <input type="text" placeholder="Webinar speaker 1" />
-                </div>
-                <div className={styles.GroupFormRight}>
-                  <label htmlFor=""></label>
-                  <input type="text" placeholder="Webinar speaker 2" />
-                </div>
-              </div>
-              <div className={styles.GroupForm2}>
-                <div className={styles.GroupFormLeft}>
-                  <input type="text" placeholder="Webinar speaker 3" />
-                </div>
-                <div className={styles.GroupFormRight}>
-                  <label htmlFor=""></label>
-                  <input type="text" placeholder="Webinar speaker 4" />
-                </div>
-              </div>
-              <div className={styles.GroupForm2}>
-                <div className={styles.GroupFormLeft}>
-                  <input type="text" placeholder="Webinar speaker 5" />
-                </div>
-              </div>
+              <GroupFormHalf titleLeft="" titleRight="" placeholderLeft="Webinar Speaker 1" placeholderRight="Webinar Speaker 2" type="normal" />
+              <GroupFormHalf titleLeft="" titleRight="" placeholderLeft="Webinar Speaker 3" placeholderRight="Webinar Speaker 4" type="normal" />
+              <GroupFormHalf titleLeft="" titleRight="" placeholderLeft="Webinar Speaker 3" placeholderRight="Webinar Speaker 4" type="halfNoLabel" />
             </div>  
           </div>
 

@@ -1,0 +1,27 @@
+  .ImageUploadTitle{
+    width: 100%;
+  }
+
+.ImageForm{
+    margin: 10px 0px;
+    width: 100%;
+    min-height: 25rem;
+    border:1px solid #bcbcbc;
+    border-radius: 10px;
+  }
+
+  
+  .GroupFormLeft label{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .ButtonImage{
+    width: 95%;
+    padding:10px 0px !important;
+    border-radius:50px;
+    border:none;
+    font-weight: bold;
+    margin-bottom:15px;
+  }

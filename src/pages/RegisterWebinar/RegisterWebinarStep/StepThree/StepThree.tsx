@@ -1,6 +1,9 @@
 import styles from './StepThree.module.scss';
 
 import Button from '../../../../elements/Button/Button';
+import SlideButton from '../SlideButton/SlideButton';
+import MidSide from '../MidSide/MidSide';
+import ImageUpload from '../ImageUpload/ImageUpload';
 
 
 const StepThree = () =>{
@@ -11,32 +14,14 @@ const StepThree = () =>{
             <p className={styles.TopicInformation}>Make your Webinar Poster!</p>
             <div className={styles.GroupForm2}>
               <div className={styles.GroupFormLeft}>
-                <label>Webinar Poster</label>
-                <div className={styles.ImageForm}></div>
-                <Button className={styles.ButtonImage}>Upload Webinar Poster</Button>
-                <p>For Poster guideline. <a href="#">download here</a></p>
+                <ImageUpload title="Poster" />
               </div>
-              <div className={styles.GroupFormMid}>
-                <div className={styles.hr}>
-                  <hr />
-                </div>
-                <p>OR</p>
-                <div className={styles.hr}>
-                  <hr />
-                </div>
-              </div>
+              <MidSide />
               <div className={styles.GroupFormLeft}>
                 <label>Poster Template</label>
                 <div className={styles.TemplateBox}>
                   <div className={styles.Box}>
-                  <div className={styles.leftBtn}>
-                     <img src={require('../../../../assets/images/icon_svg/arrow_drop_down.svg').default}
-                     alt="arrow" width="70%" />
-                  </div>
-                  <div className={styles.rightBtn}>
-                      <img src={require('../../../../assets/images/icon_svg/arrow_drop_down.svg').default}
-                      alt="arrow" width="70%" />
-                  </div>
+                    <SlideButton />
                     <div className={styles.RowTemplate}>
                       <div className={styles.ImageTemplate}>
                         <img src={
