@@ -1,59 +1,26 @@
 import styles from './StepOne.module.scss';
 
+import GroupForm from '../GroupForm/GroupFormFull';
+import GroupFormHalf from '../GroupForm/GroupFormHalf';
+
 const StepOne = () =>{
     return(
 
         <>
-
-            <p>Tell us about your webinar!</p>
-            <div className={styles.GroupForm}>
-              <label htmlFor="">Title</label>
-              <input type="text" placeholder="Webinar Title" />
-            </div>
-            <div className={styles.GroupForm2}>
-              <div className={styles.GroupFormLeft}>
-                <label htmlFor="">Date</label>
-                <input type="text" placeholder="dd/mm/yy" />
-              </div>
-              <div className={styles.GroupFormRight}>
-                <label htmlFor="">Time</label>
-                <div className={styles.TimeStartEnd}>
-                  <input type="text" placeholder="hh:mm" />
-                  <p>-</p>
-                  <input type="text" placeholder="hh:mm" />
-                </div>
-              </div>
-            </div>    
-            <div className={styles.GroupForm2}>
-              <div className={styles.GroupFormLeft}>
-                <label htmlFor="">Platform</label>
-                <input type="text" placeholder="Platform" />
-              </div>
-              <div className={styles.GroupFormRight}>
-                <label htmlFor="">Attendee</label>
-                <input type="text" placeholder="Amount of Attenden" />
-              </div>
-            </div>
-            <div className={styles.GroupForm}>
-              <label htmlFor="">Link</label>
-              <input type="text" placeholder="Webinar Link" />
-            </div>    
-            <div className={styles.GroupForm2}>
-              <div className={styles.GroupFormLeft}>
-                <label htmlFor="">Entrance Fee</label>
-                <input type="text" placeholder="Fee" />
-              </div>
-              <div className={styles.GroupFormRight}>
-                <label htmlFor="">Category</label>
-                <input type="text" placeholder="Webinar Category" />
-              </div>
-            </div>
+          <div className={styles.step}>
+            <p className={styles.TopicInformation}>Tell us about your webinar!</p>
+            <GroupForm title="Title" placeholder="Webinar Title" />
+            <GroupFormHalf titleLeft="Date" titleRight="Time" placeholderLeft="" placeholderRight="" time="time"/>    
+            <GroupFormHalf titleLeft="Platform" titleRight="Attendee" placeholderLeft="Webinar Platform" placeholderRight="Amount of Attendee" time=""/>    
+            <GroupForm title="Link" placeholder="Webinar Link" />    
+            <GroupFormHalf titleLeft="Entrance Fee" titleRight="Category" placeholderLeft="Fee" placeholderRight="Webinar Category" time=""/>    
             <div className={styles.checkbox}>
               <div>
                 <input type="checkbox" />
                 <p>This website is free</p>
               </div>
             </div>
+          </div>
 
         </>
 

@@ -8,7 +8,7 @@ const StepThree = () =>{
 
         <>
 
-            <p>Make your Webinar Poster!</p>
+            <p className={styles.TopicInformation}>Make your Webinar Poster!</p>
             <div className={styles.GroupForm2}>
               <div className={styles.GroupFormLeft}>
                 <label>Webinar Poster</label>

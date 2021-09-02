@@ -1,0 +1,18 @@
+.GroupForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.GroupForm input{
+    padding:8px 0;
+    border:none;
+    border-bottom:2px solid #bcbcbc;
+    outline: none;
+    font-size: 1.2em;
+  }
+  
+  .GroupForm input:focus{
+    border-bottom:2px solid #5e5de4;
+  }

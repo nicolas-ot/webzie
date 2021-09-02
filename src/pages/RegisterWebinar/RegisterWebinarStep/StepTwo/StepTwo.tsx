@@ -2,10 +2,9 @@ import styles from './StepTwo.module.scss';
 
 const StepTwo = () =>{
     return(
-
-        <>
-
-            <p>Tell us about your webinar!</p>
+      
+          <div className={styles.step}>
+            <p className={styles.TopicInformation}>Tell us about your webinar!</p>
             <div className={styles.GroupForm}>
               <label htmlFor="">Description</label>
               <textarea className={styles.InputDescription} placeholder="Describe your webinar"></textarea>
@@ -35,9 +34,8 @@ const StepTwo = () =>{
                   <input type="text" placeholder="Webinar speaker 5" />
                 </div>
               </div>
-            </div>    
-
-        </>
+            </div>  
+          </div>
 
     )
 }

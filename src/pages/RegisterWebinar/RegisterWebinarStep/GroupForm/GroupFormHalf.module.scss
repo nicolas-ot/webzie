@@ -1,0 +1,40 @@
+.GroupForm2{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .GroupFormLeft{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+  }
+  
+  .GroupFormRight{
+    padding-left: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .TimeStartEnd{
+    display: flex;
+  }
+  
+  .TimeStartEnd > p{
+    padding:10px;
+  }
+  
+  .GroupForm2 input{
+    width: 100%;
+    padding:8px 0;
+    border:none;
+    border-bottom:2px solid #bcbcbc;
+    outline: none;
+    font-size: 1.2em;
+  }
+  
+  .GroupForm2 input:focus{
+    border-bottom:2px solid #5e5de4;
+  }

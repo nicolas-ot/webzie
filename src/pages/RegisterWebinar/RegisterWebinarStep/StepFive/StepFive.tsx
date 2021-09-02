@@ -3,7 +3,7 @@ import styles from './StepFive.module.scss';
 const StepFive = () =>{
     return(
         <div>
-          <p>Let's Publish your Webinar!</p>
+          <p className={styles.TopicInformation}>Let's Publish your Webinar!</p>
           <label htmlFor="">Publishing</label>
           <form>
             <div className={styles.GroupForm}>           

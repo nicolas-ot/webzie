@@ -8,7 +8,7 @@ const StepFour = () =>{
 
         <>
 
-            <p>Make your Webinar E-Sertificate!</p>
+            <p className={styles.TopicInformation}>Make your Webinar E-Sertificate!</p>
             <div className={styles.GroupForm2}>
               <div className={styles.GroupFormLeft}>
                 <label>Webinar Poster</label>

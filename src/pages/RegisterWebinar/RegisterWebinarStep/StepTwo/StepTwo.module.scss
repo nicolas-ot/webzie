@@ -1,4 +1,4 @@
-  p:first-child{
+  .TopicInformation{
     font-size: 2.5em;
     font-weight: bold;
     margin-bottom: 20px;
@@ -48,15 +48,7 @@
     width: 100%;
   }
   
-  .TimeStartEnd{
-    display: flex;
-  }
-  
-  .TimeStartEnd > p{
-    padding:10px;
-  }
-  
-  input{
+  .step input{
     padding:8px 0;
     border:none;
     border-bottom:2px solid #bcbcbc;
@@ -64,6 +56,6 @@
     font-size: 1.2em;
   }
   
-  input:focus{
+  .step input:focus{
     border-bottom:2px solid #5e5de4;
   }
