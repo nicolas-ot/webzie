@@ -15,27 +15,31 @@ function App() {
     <Provider store={store}>
       <HashRouter basename={'/'}>
         <div className='App'>
-          <Layout>
-            <Switch>
-              <Route exact path='/asd'>
+          <Switch>
+            <Route exact path='/asd'>
+              <Layout>
                 <Main />
-              </Route>
-              <Route path='/cart'>
+              </Layout>
+            </Route>
+            <Route exact path='/cart'>
+              <Layout>
                 <Cart />
-              </Route>
-            </Switch>
-            <Switch>
-              <Route path='/login'>
-                <Auth />
-              </Route>
-              <Route path='/waiting-for-payment'>
+              </Layout>
+            </Route>
+            <Route exact path='/waiting-for-payment'>
+              <Layout>
                 <WaitingPayment />
-              </Route>
-              <Route exact path='/'>
+              </Layout>
+            </Route>
+            <Route exact path='/'>
+              <Layout>
                 <RegisterWebinar />
-              </Route>
-            </Switch>
-          </Layout>
+              </Layout>
+            </Route>
+            <Route path='/login'>
+              <Auth />
+            </Route>
+          </Switch>
           {/* {react router: Landing, Main, SignIn/Up} */}
         </div>
       </HashRouter>
