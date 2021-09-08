@@ -1,8 +1,7 @@
-// @font-face {
-//   font-family: Archivo;
-//   src: url(../../assets/fonts/Archivo-VariableFont_wdthwght.ttf);
-// }
-// error, blm tau kenapa
+@font-face {
+  font-family: Archivo;
+  src: url('../../../assets/fonts/Archivo-VariableFont_wdth\,wght.ttf');
+}
 
 body {
   width: 100%;
@@ -10,60 +9,68 @@ body {
 
 section {
   display: flex;
+  justify-content: center;
   width: 100%;
 }
 
-section .left {
-  width: 23%;
+section .ImageBackdrop{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 25%;
 }
 
-section .content {
-  width: 54%;
+section .ImageBackdropRight{
+  position: absolute;
+  bottom:0;
+  right: 0;
+  width: 25%;
+}
+
+section .Content {
+  z-index: 10;
+  width: 100vh;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-section .right {
-  width: 23%;
-  display: flex;
-  align-items: flex-end;
-}
 
-.content .boxSignin {
+.Content .BoxSignin {
   border-radius: 10px;
   box-shadow: 0px 0px 7px 0px;
   display: flex;
   width: 90%;
+  background-color: white;
 }
 
-.boxSignin .image {
-  width: 45%;
+.BoxSignin .Image {
+  width: 45vh;
 }
 
-.boxSignin .image img {
+.BoxSignin .Image img {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   object-fit: cover;
   object-position: 80%;
 }
 
-.input {
-  width: 55%;
+.Input {
+  width: 55vh;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 40px 30px 40px 50px;
   box-shadow: -10px 0px 60px 40px white;
 }
 
-.input .topic {
+.Input .Topic {
   font-size: 3.6em;
   font-weight: bold;
   color: #5e5de4;
 }
 
-.formGroup {
+.FormGroup {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -71,11 +78,12 @@ section .right {
   font-size: 1.4em;
 }
 
-.formGroup label {
+.FormGroup label {
   font-weight: bold;
+  font-size: 1.1em;
 }
 
-.formGroup input {
+.FormGroup input {
   margin-top: 5px;
   padding: 10px 0px;
   border: none;
@@ -83,15 +91,15 @@ section .right {
   outline: none;
 }
 
-.formGroup input::placeholder {
+.FormGroup input::placeholder {
   color: #bcbcbc;
 }
 
-.formGroup input:focus {
+.FormGroup input:focus {
   border-bottom: 2px solid #5e5de4;
 }
 
-.box1 {
+.WrapperRemember {
   margin-top: 15px;
   display: flex;
   justify-content: space-between;
@@ -99,29 +107,29 @@ section .right {
   font-size: 1.4em;
 }
 
-.box1 input {
+.WrapperRemember input {
   width: 20px;
   height: 20px;
 }
 
-.box1 .remember {
+.WrapperRemember .Remember {
   display: flex;
   align-items: center;
   font-size: 1.4em;
 }
 
-.box1 .remember p {
+.WrapperRemember .Remember p {
   margin-left: 5px;
 }
 
-.box2 {
+.WrapperSignInButton {
   margin-top: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.box2 button {
+.WrapperSignInButton button {
   padding: 10px 50px;
   border: none;
   background-color: #5e5de4;
@@ -131,30 +139,30 @@ section .right {
   font-size: 1.4em;
 }
 
-.box3 {
+.WrapperLine {
   margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.box3 hr {
+.WrapperLine hr {
   width: 48%;
   background-color: #bcbcbc;
   margin: 0;
 }
 
-.box3 p {
+.WrapperLine p {
   font-size: 1.8em;
   padding: 0px 10px;
 }
 
-.box4 {
+.WrapperButton {
   margin-top: 15px;
   width: 100%;
 }
 
-.box4 button {
+.WrapperButton button {
   width: 100%;
   border-radius: 50px;
   border: none;
@@ -165,10 +173,31 @@ section .right {
   font-size: 1.4em;
 }
 
-.box5 {
+.WrapperSignUp {
   margin-top: 15px;
   font-size: 1.8em;
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+.WrapperSignUp button{
+  border:none;
+  background-color:transparent;
+}
+
+.WrapperSignUp button:hover{
+  color:#5e5de4;
+}
+
+@media (max-width : 768px){
+  .Input{
+    box-shadow: 0px 0px 10px 2px #bcbcbc;
+    width: 100%;
+    padding:40px 30px;
+  }
+
+  .BoxSignin .Image{
+    display: none;
+  }
 }

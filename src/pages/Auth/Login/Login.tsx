@@ -7,8 +7,7 @@ interface LoginProps {
 const Login: React.FC<LoginProps> = ({ changeToLogout }) => {
   return (
     <section>
-      <div className={styles.left}>
-        <img
+        <img className={styles.ImageBackdrop}
           src={
             require('../../../assets/images/Website Backdrop/Backdrop Sign In _ Sign Up/Mask Group 418.png')
               .default
@@ -16,10 +15,9 @@ const Login: React.FC<LoginProps> = ({ changeToLogout }) => {
           alt='backdrop-left'
           width='100%'
         />
-      </div>
-      <div className={styles.content}>
-        <div className={styles.boxSignin}>
-          <div className={styles.image}>
+      <div className={styles.Content}>
+        <div className={styles.BoxSignin}>
+          <div className={styles.Image}>
             <img
               src={
                 require('../../../assets/images/Full Page/Sign In - Sign Up/Sign In/Asset.jpg')
@@ -30,40 +28,40 @@ const Login: React.FC<LoginProps> = ({ changeToLogout }) => {
               height='100%'
             />
           </div>
-          <div className={styles.input}>
-            <p className={styles.topic}>Sign In</p>
-            <div className={styles.formGroup}>
+          <div className={styles.Input}>
+            <p className={styles.Topic}>Sign In</p>
+            <div className={styles.FormGroup}>
               <label>Email Address</label>
               <input type='text' placeholder='Your email' />
             </div>
-            <div className={styles.formGroup}>
+            <div className={styles.FormGroup}>
               <label>Password</label>
               <input type='password' placeholder='*****' />
             </div>
-            <div className={styles.box1}>
-              <div className={styles.remember}>
+            <div className={styles.WrapperRemember}>
+              <div className={styles.Remember}>
                 <input type='checkbox' />
                 <p>Remember me</p>
               </div>
-              <a href='forget' className={styles.forget}>
+              <a href='forget' className={styles.Forget}>
                 Forget your password?
               </a>
             </div>
-            <div className={styles.box2}>
+            <div className={styles.WrapperSignInButton}>
               <button>Sign In</button>
             </div>
-            <div className={styles.box3}>
+            <div className={styles.WrapperLine}>
               <hr />
               <p>OR</p>
               <hr />
             </div>
-            <div className={styles.box4}>
+            <div className={styles.WrapperButton}>
               <button>Sign In</button>
             </div>
-            <div className={styles.box4}>
+            <div className={styles.WrapperButton}>
               <button>Sign Up</button>
             </div>
-            <div className={styles.box5}>
+            <div className={styles.WrapperSignUp}>
               <p>
                 Don't have account?{' '}
                 <button onClick={() => changeToLogout()}>Sign Up</button>
@@ -72,8 +70,7 @@ const Login: React.FC<LoginProps> = ({ changeToLogout }) => {
           </div>
         </div>
       </div>
-      <div className={styles.right}>
-        <img
+        <img className={styles.ImageBackdropRight}
           src={
             require('../../../assets/images/Website Backdrop/Backdrop Sign In _ Sign Up/Mask Group 417.png')
               .default
@@ -81,7 +78,6 @@ const Login: React.FC<LoginProps> = ({ changeToLogout }) => {
           alt='backdrop-left'
           width='100%'
         />
-      </div>
     </section>
   );
 };
