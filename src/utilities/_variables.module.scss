@@ -2,11 +2,13 @@ $dark-purple: #5e5de4;
 $light-purple: #8d8ce6;
 $dark-green: #62a87c;
 $light-green: lightgreen;
+$orange: orange;
 $box-shadow: 0 0 10px #dddde3;
 
 :export {
   dark-purple: $dark-purple;
   light-purple: $light-purple;
   dark-green: $dark-green;
+  orange: $orange;
   box-shadow: $box-shadow;
 }

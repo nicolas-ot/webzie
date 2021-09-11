@@ -6,11 +6,11 @@ import { useEffect, useState } from 'react';
 import { useTypedSelector } from '../../hooks/use-typed-selector';
 
 const Main = () => {
-  const [activePage, setActivePage] = useState('Home');
+  const [activePage, setActivePage] = useState('Statistic');
   const mode = useTypedSelector((state) => state.modes.mode);
 
   useEffect(() => {
-    setActivePage('Home');
+    setActivePage('Statistic');
   }, [mode]);
   return (
     <div className='main-page-main-content'>

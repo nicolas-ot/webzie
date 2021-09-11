@@ -1,7 +1,8 @@
+import Button from '../../../../../../../elements/Button/Button';
+import { currencyFormatter } from '../../../../../../../utilities/utility';
 import dateformat from 'dateformat';
 import poster from '../../../../../../../assets/images/poster_webinar/poster-covid.jpg';
 import webinar from '../../../../../../../data/static/webinar_mock.js';
-import Button from '../../../../../../../elements/Button/Button';
 
 import './webinar.scss';
 import Share from '../../../../../../../elements/Share/Share';
@@ -16,7 +17,9 @@ const Webinar = () => {
       <div className='webinar-top-pick-content-wrapper'>
         <div className='webinar-top-pick-data-wrapper'>
           <h2 className='top-pick-webinar-title'>{topWebinar.title}</h2>
-          <span className='top-pick-webinar-price'>{topWebinar.price}</span>
+          <span className='top-pick-webinar-price'>
+            {currencyFormatter.format(topWebinar.price)}
+          </span>
           <div className='top-pick-webinar-details'>
             <div className='details-column'>
               <div className='details-row date'>
