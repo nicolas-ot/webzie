@@ -8,7 +8,7 @@ interface ModeState {
   mode: ModeTypes;
 }
 
-const initialState: ModeState = { mode: 'user' };
+const initialState: ModeState = { mode: 'host' };
 
 const reducer = produce((state: ModeState = initialState, action: Action) => {
   switch (action.type) {

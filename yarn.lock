@@ -1867,6 +1867,11 @@
   "resolved" "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.8.tgz"
   "version" "7.0.8"
 
+"@types/lodash@^4.14.105":
+  "integrity" "sha512-/BHF5HAx3em7/KkzVKm3LrsD6HZAXuXO1AJZQ3cRRBZj4oHZDviWPYu0aEplAqDFNHZPW6d3G7KN+ONcCCC7pw=="
+  "resolved" "https://registry.npmjs.org/@types/lodash/-/lodash-4.14.172.tgz"
+  "version" "4.14.172"
+
 "@types/minimatch@*":
   "integrity" "sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ=="
   "resolved" "https://registry.npmjs.org/@types/minimatch/-/minimatch-3.0.5.tgz"
@@ -1960,6 +1965,15 @@
   "integrity" "sha512-uTKHDK9STXFHLaKv6IMnwp52fm0hwU+N89w/p9grdUqcFA6WuqDyPhaWopbNyE1k/VhgzmHl8pu1L4wITtmlLw=="
   "resolved" "https://registry.npmjs.org/@types/react/-/react-17.0.15.tgz"
   "version" "17.0.15"
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    "csstype" "^3.0.2"
+
+"@types/react@^16.0.40":
+  "integrity" "sha512-jOxlBV9RGZhphdeqJTCv35VZOkjY+XIEY2owwSk84BNDdDv2xS6Csj6fhi+B/q30SR9Tz8lDNt/F2Z5RF3TrRg=="
+  "resolved" "https://registry.npmjs.org/@types/react/-/react-16.14.15.tgz"
+  "version" "16.14.15"
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -9901,6 +9915,11 @@
   "resolved" "https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz"
   "version" "3.0.4"
 
+"react-native-star-rating-bar-graph@^1.0.0":
+  "integrity" "sha512-X5zNvbQ6wIVuy//X/0sQ0ut4ac3jKva0IqJP3O/ZjMGLW8zlvJQu6M6/7QXHBPXMHmr/aAZ51xRNOFS0liNNwg=="
+  "resolved" "https://registry.npmjs.org/react-native-star-rating-bar-graph/-/react-native-star-rating-bar-graph-1.0.0.tgz"
+  "version" "1.0.0"
+
 "react-overlays@^4.1.1":
   "integrity" "sha512-WtJifh081e6M24KnvTQoNjQEpz7HoLxqt8TwZM7LOYIkYJ8i/Ly1Xi7RVte87ZVnmqQ4PFaFiNHZhSINPSpdBQ=="
   "resolved" "https://registry.npmjs.org/react-overlays/-/react-overlays-4.1.1.tgz"
@@ -9914,6 +9933,14 @@
     "prop-types" "^15.7.2"
     "uncontrollable" "^7.0.0"
     "warning" "^4.0.3"
+
+"react-rating@^2.0.5":
+  "integrity" "sha512-uldxgLCe5bzqGX7V+7/bPgQQj2Kok6eiMgTMxjKOhfhnQkFLDlc4TjMlp7gaJFAHWdbiOnqpiShI7z8as6oWtg=="
+  "resolved" "https://registry.npmjs.org/react-rating/-/react-rating-2.0.5.tgz"
+  "version" "2.0.5"
+  dependencies:
+    "@types/lodash" "^4.14.105"
+    "@types/react" "^16.0.40"
 
 "react-redux@^7.2.4":
   "integrity" "sha512-hOQ5eOSkEJEXdpIKbnRyl04LhaWabkDPV+Ix97wqQX3T3d2NQ8DUblNXXtNMavc7DpswyQM6xfaN4HQDKNY2JA=="

@@ -16,7 +16,7 @@ function App() {
       <HashRouter basename={'/'}>
         <div className='App'>
           <Switch>
-            <Route exact path='/asd'>
+            <Route exact path='/'>
               <Layout>
                 <Main />
               </Layout>
@@ -31,7 +31,7 @@ function App() {
                 <WaitingPayment />
               </Layout>
             </Route>
-            <Route exact path='/'>
+            <Route exact path='/register'>
               <Layout>
                 <RegisterWebinar />
               </Layout>
