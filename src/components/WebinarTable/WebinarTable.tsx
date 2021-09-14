@@ -33,7 +33,7 @@ const WebinarTable: React.FC<WebinarTableProps> = ({ myWebinars, title }) => {
   ));
   return (
     <div>
-      <h3>{title}</h3>
+      <h3 style={{ marginTop: 0 }}>{title}</h3>
       <div className='webinar-table-sort-wrapper'>
         <Sort
           active={activeSort}

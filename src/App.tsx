@@ -1,6 +1,6 @@
 import './app.scss';
 
-import { Switch, Route, Link, HashRouter } from 'react-router-dom';
+import { Switch, Route, HashRouter } from 'react-router-dom';
 import Auth from './pages/Auth/Auth';
 import Main from './pages/Main/Main';
 import { Provider } from 'react-redux';

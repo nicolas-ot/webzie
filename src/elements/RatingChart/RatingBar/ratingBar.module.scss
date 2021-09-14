@@ -11,13 +11,22 @@
 .barContainer {
   width: 100%;
   border-radius: 10px;
-  background-color: #a1a1a1;
+  background-color: #eee;
   overflow: hidden;
 }
 
-.h3 {
-  font-size: 13;
+.RatingPoint {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
   font-weight: bold;
-  color: #a1a1a1;
   margin-right: 5px;
+
+  & > :first-child {
+    margin-right: 2px;
+  }
+
+  span {
+    margin-right: 5px;
+  }
 }

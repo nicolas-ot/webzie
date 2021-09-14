@@ -9,7 +9,7 @@ interface SignUpProps {
 }
 
 const SignUp: React.FC<SignUpProps> = () => {
-  const [isIndividual, setIsIndiviual] = useState(true);
+  const [isIndividual] = useState(true);
   return (
     <section>
       <div className={styles.left}>

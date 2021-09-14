@@ -1,0 +1,13 @@
+.webinar-analysis-analytic-chart-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-width: 0 1px;
+
+  h6 {
+    font-size: 1.8rem;
+  }
+}

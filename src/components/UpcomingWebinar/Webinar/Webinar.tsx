@@ -1,5 +1,4 @@
 import './webinar.scss';
-import variables from '../../../utilities/_variables.module.scss';
 
 import dateformat from 'dateformat';
 import { dateDiffInDays } from '../../../utilities/utility';

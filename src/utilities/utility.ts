@@ -11,3 +11,7 @@ export const currencyFormatter = new Intl.NumberFormat('in-ID', {
   style: 'currency',
   currency: 'IDR',
 });
+
+export const randomId = () => {
+  return Math.random().toString(36).substr(2, 5);
+};

@@ -1,7 +1,9 @@
+import WebinarTable from '../../../../../components/WebinarTable/WebinarTable';
+
 const History = () => {
   return (
     <div>
-      <div>History</div>
+      <WebinarTable title='History' />
     </div>
   );
 };

@@ -10,11 +10,6 @@ import image9 from '../../assets/images/poster_webinar/poster-juru-bahasa.jpeg';
 
 // needs host rating data and host rating given
 
-const currencyFormatter = new Intl.NumberFormat('in-ID', {
-  style: 'currency',
-  currency: 'IDR',
-});
-
 const data = [
   {
     benefit: [

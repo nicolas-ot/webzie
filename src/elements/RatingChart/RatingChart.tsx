@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import styles from './ratingChart.module.scss';
 
 import RatingBar from './RatingBar/RatingBar';
@@ -14,14 +13,6 @@ type Rating = {
   fourStar: number;
   fiveStar: number;
 };
-
-enum StarRating {
-  'oneStar' = 1,
-  'twoStar',
-  'threeStar',
-  'fourStar',
-  'fiveStar',
-}
 
 const RatingChart: React.FC<RatingChartProps> = ({ stars }) => {
   // const barCHar = stars.map();
