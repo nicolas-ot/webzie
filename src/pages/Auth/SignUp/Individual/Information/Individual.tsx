@@ -1,12 +1,10 @@
 import styles from './Individual.module.scss';
 
-import Individual_1 from './Individual_1';
-import Individual_2 from './Individual_2';
-import Individual_3 from './Individual_3';
+import IndividualTwo from './Individual_2';
 
-interface IndividualProps {
-  changeToOrganization: () => void;
-}
+// interface IndividualProps {
+//   changeToOrganization: () => void;
+// }
 
 const Individual: React.FC = () => {
   return (
@@ -23,7 +21,7 @@ const Individual: React.FC = () => {
         />
       </div>
       <div className={styles.input}>
-        <Individual_2 />
+        <IndividualTwo />
       </div>
     </>
   );

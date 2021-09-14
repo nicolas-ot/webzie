@@ -1,9 +1,6 @@
 import styles from './Organization.module.scss';
 
-
-import Organization_1 from './Organization_1';
-import Organization_2 from './Organization_2';
-import Organization_3 from './Organization_3';
+import OrganizationThree from './Organization_3';
 
 const Organization = () => {
     return (
@@ -22,7 +19,7 @@ const Organization = () => {
             />
         </div>
         <div className={styles.input}>
-            <Organization_3 />
+            <OrganizationThree />
         </div>
 
         </>
