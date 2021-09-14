@@ -1,7 +1,6 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import styles from './payment.module.scss';
 import { currencyFormatter } from '../../../utilities/utility';
-import PaymentMethodData from '../../../data/static/paymentMethod';
 import { useHistory } from 'react-router-dom';
 
 import PaymentMethod from './PaymentMethod/PaymentMethod';
@@ -62,7 +61,7 @@ const Payment: React.FC<PaymentProps> = ({ total }) => {
           </div>
         </div>
         <div className={styles.salin}>
-          <a href='#'>Salin nomor</a>
+          <a href='dummy'>Salin nomor</a>
         </div>
         <hr />
         <p className={styles.PayWith}>Pay with</p>
@@ -77,7 +76,7 @@ const Payment: React.FC<PaymentProps> = ({ total }) => {
               <option value=''>Bank BNI</option>
             </select>
             <p className={styles.Rekening}>XXXXXXXXX</p>
-            <a href='#'>Salin Nomor Rekeneing</a>
+            <a href='dummy'>Salin Nomor Rekeneing</a>
             <PaymentRules />
           </div>
         </PaymentMethod>
@@ -92,7 +91,7 @@ const Payment: React.FC<PaymentProps> = ({ total }) => {
               <option value=''>Bank BNI</option>
             </select>
             <p className={styles.Rekening}>XXXXXXXXXXXXXXXXX</p>
-            <a href='#'>Salin Nomor Rekeneing</a>
+            <a href='dummy'>Salin Nomor Rekeneing</a>
             <PaymentRules />
           </div>
         </PaymentMethod>

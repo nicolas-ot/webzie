@@ -1,4 +1,3 @@
-import { string } from 'yargs';
 import styles from './GroupFormHalf.module.scss';
 
 interface GroupFormHalfProps {

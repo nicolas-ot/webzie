@@ -1,6 +1,5 @@
 import styles from './StepTwo.module.scss';
 
-import GroupForm from '../GroupForm/GroupFormFull';
 import GroupFormHalf from '../GroupForm/GroupFormHalf';
 
 const StepTwo = () =>{

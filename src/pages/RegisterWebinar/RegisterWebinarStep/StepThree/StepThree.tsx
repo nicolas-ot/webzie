@@ -1,6 +1,5 @@
 import styles from './StepThree.module.scss';
 
-import Button from '../../../../elements/Button/Button';
 import SlideButton from '../SlideButton/SlideButton';
 import MidSide from '../MidSide/MidSide';
 import ImageUpload from '../ImageUpload/ImageUpload';
@@ -25,56 +24,56 @@ const StepThree = () =>{
                     <div className={styles.RowTemplate}>
                       <div className={styles.ImageTemplate}>
                         <img src={
-                            require('../../../../assets/images/poster_webinar/poster-architect.jpg').
-                            default} 
+                            require('../../../../assets/images/poster_webinar/poster-architect.jpg')
+                            .default} 
                             alt="poster_webinar" />
                       </div>
                       <div className={styles.ImageTemplate}>
                         <img src={
-                            require('../../../../assets/images/poster_webinar/poster-architect.jpg').
-                            default} 
-                            alt="poster_webinar" />
-                      </div>
-                    </div>
-                    <div className={styles.RowTemplate}>
-                      <div className={styles.ImageTemplate}>
-                        <img src={
-                            require('../../../../assets/images/poster_webinar/poster-architect.jpg').
-                            default} 
-                            alt="poster_webinar" />
-                      </div>
-                      <div className={styles.ImageTemplate}>
-                        <img src={
-                            require('../../../../assets/images/poster_webinar/poster-architect.jpg').
-                            default} 
+                            require('../../../../assets/images/poster_webinar/poster-architect.jpg')
+                            .default} 
                             alt="poster_webinar" />
                       </div>
                     </div>
                     <div className={styles.RowTemplate}>
                       <div className={styles.ImageTemplate}>
                         <img src={
-                            require('../../../../assets/images/poster_webinar/poster-architect.jpg').
-                            default} 
+                            require('../../../../assets/images/poster_webinar/poster-architect.jpg')
+                            .default} 
                             alt="poster_webinar" />
                       </div>
                       <div className={styles.ImageTemplate}>
                         <img src={
-                            require('../../../../assets/images/poster_webinar/poster-architect.jpg').
-                            default} 
+                            require('../../../../assets/images/poster_webinar/poster-architect.jpg')
+                            .default} 
                             alt="poster_webinar" />
                       </div>
                     </div>
                     <div className={styles.RowTemplate}>
                       <div className={styles.ImageTemplate}>
                         <img src={
-                            require('../../../../assets/images/poster_webinar/poster-architect.jpg').
-                            default} 
+                            require('../../../../assets/images/poster_webinar/poster-architect.jpg')
+                            .default} 
                             alt="poster_webinar" />
                       </div>
                       <div className={styles.ImageTemplate}>
                         <img src={
-                            require('../../../../assets/images/poster_webinar/poster-architect.jpg').
-                            default} 
+                            require('../../../../assets/images/poster_webinar/poster-architect.jpg')
+                            .default} 
+                            alt="poster_webinar" />
+                      </div>
+                    </div>
+                    <div className={styles.RowTemplate}>
+                      <div className={styles.ImageTemplate}>
+                        <img src={
+                            require('../../../../assets/images/poster_webinar/poster-architect.jpg')
+                            .default} 
+                            alt="poster_webinar" />
+                      </div>
+                      <div className={styles.ImageTemplate}>
+                        <img src={
+                            require('../../../../assets/images/poster_webinar/poster-architect.jpg')
+                            .default} 
                             alt="poster_webinar" />
                       </div>
                     </div>

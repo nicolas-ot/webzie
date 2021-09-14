@@ -13,7 +13,7 @@ const ImageUpload:React.FC<ImageUploadProps> = ({title}) =>{
             <label className={styles.ImageUploadTitle}>Webinar {title}</label>
             <div className={styles.ImageForm}></div>
             <Button className={styles.ButtonImage}>Upload {title}</Button>
-            <p>For {title} guideline. <a href="#">download here</a></p>
+            <p>For {title} guideline. <a href="dummy">download here</a></p>
         
         </>
 
