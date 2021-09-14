@@ -39,8 +39,6 @@ const RatingChart: React.FC<RatingChartProps> = ({ stars }) => {
     <RatingBar width={barLength(star)} idx={idx} />
   ));
 
-  console.log(barCharts);
-
   return (
     <div className={styles.container}>
       <div>{barCharts}</div>

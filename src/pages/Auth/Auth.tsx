@@ -1,5 +1,3 @@
-import styles from './auth.module.scss';
-
 import Layout from '../../hoc/LandingLayout/LandingLayout';
 import Login from './Login/Login';
 import { useState } from 'react';

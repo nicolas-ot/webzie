@@ -6,7 +6,7 @@ import SearchBar from '../../../elements/SearchBar/SearchBar';
 import variables from '../../../utilities/_variables.module.scss';
 import { useActions } from '../../../hooks/use-actions';
 import { useTypedSelector } from '../../../hooks/use-typed-selector';
-import { Link, Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
 
 const Navbar = () => {

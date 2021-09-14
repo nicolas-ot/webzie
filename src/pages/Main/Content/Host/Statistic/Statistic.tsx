@@ -38,10 +38,10 @@ const SVGIconEmpty = () => {
 
 const Statistic = () => {
   const stars = {
-    oneStar: 25, // star type : total votes
-    twoStar: 30,
-    threeStar: 60,
-    fourStar: 80,
+    oneStar: 0, // star t0e : total votes
+    twoStar: 0,
+    threeStar: 0,
+    fourStar: 0,
     fiveStar: 50,
   };
   return (
