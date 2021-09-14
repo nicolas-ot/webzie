@@ -1,0 +1,21 @@
+.rowContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 3px;
+  margin-right: 20px;
+}
+
+.barContainer {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #a1a1a1;
+}
+.h3 {
+  font-size: 13;
+  font-weight: bold;
+  color: #a1a1a1;
+  margin-right: 5px;
+}

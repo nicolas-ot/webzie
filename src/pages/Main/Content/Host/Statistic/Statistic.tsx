@@ -4,6 +4,7 @@ import host from '../../../../../data/static/host-data.js';
 import variables from '../../../../../utilities/_variables.module.scss';
 
 import Rating from 'react-rating';
+import RatingChart from '../../../../../elements/RatingChart/RatingChart';
 
 const SVGIcon = () => {
   return (
@@ -36,6 +37,13 @@ const SVGIconEmpty = () => {
 };
 
 const Statistic = () => {
+  const stars = {
+    oneStar: 25, // star type : total votes
+    twoStar: 30,
+    threeStar: 60,
+    fourStar: 80,
+    fiveStar: 50,
+  };
   return (
     <div>
       <div className='host-statistic-wrapper'>
@@ -50,7 +58,7 @@ const Statistic = () => {
               <span className='rating'>{`${host.rating}/5 `}</span>
               <span>{`(${host.ratingGiven})`}</span>
             </div>
-            <div className='profile-stars'>
+            <div className='profile-rating-stars'>
               <Rating
                 fractions={10}
                 readonly
@@ -59,7 +67,9 @@ const Statistic = () => {
                 fullSymbol={<SVGIcon />}
               />
             </div>
-            <div className='profile-stars-partition'>tes</div>
+            <div className='profile-rating-stars-chart'>
+              <RatingChart stars={stars} />
+            </div>
             <div className='profile-badges-wrapper'></div>
           </div>
           <div className='webinar-analysis-wrapper'>Webinar Analysis</div>

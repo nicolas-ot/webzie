@@ -9915,6 +9915,11 @@
   "resolved" "https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz"
   "version" "3.0.4"
 
+"react-native-star-rating-bar-graph@^1.0.0":
+  "integrity" "sha512-X5zNvbQ6wIVuy//X/0sQ0ut4ac3jKva0IqJP3O/ZjMGLW8zlvJQu6M6/7QXHBPXMHmr/aAZ51xRNOFS0liNNwg=="
+  "resolved" "https://registry.npmjs.org/react-native-star-rating-bar-graph/-/react-native-star-rating-bar-graph-1.0.0.tgz"
+  "version" "1.0.0"
+
 "react-overlays@^4.1.1":
   "integrity" "sha512-WtJifh081e6M24KnvTQoNjQEpz7HoLxqt8TwZM7LOYIkYJ8i/Ly1Xi7RVte87ZVnmqQ4PFaFiNHZhSINPSpdBQ=="
   "resolved" "https://registry.npmjs.org/react-overlays/-/react-overlays-4.1.1.tgz"
